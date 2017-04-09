@@ -5,6 +5,7 @@
       "one-dark-ui"
       "gruvbox-plus-syntax"
     ]
+    useCustomTitleBar: true
   editor:
     showIndentGuide: true
     showInvisibles: true
