@@ -34,3 +34,15 @@ All the dotfiles stay in our home directory. If we want to track a file, we simp
 ```
 
 And then commit and push the same way.
+
+## What to install
+*A list of tools that need to be installed and settings to be applied for the dotfiles to work properly. Maybe this should be in a script*
+
+* Install command line tools via `xcode-select --install` to be able to use git. Alternatively, you can install git via homebrew.
+* Switch Shell to zsh via `chsh -s $(which zsh)`
+* Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+* Install [Homebrew](https://brew.sh/)
+* Install tmux via `brew install tmux`
+* Install [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/)
+* Install [rbenv](https://github.com/rbenv/rbenv)
+* Install [nvm](https://github.com/creationix/nvm)
