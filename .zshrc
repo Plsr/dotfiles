@@ -83,4 +83,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Alias for dotfiles repo
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Add rbenv to PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+# Autmoatically load rbenv
+eval "$(rbenv init -)"
