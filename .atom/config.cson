@@ -1,0 +1,19 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "gruvbox-plus-syntax"
+    ]
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+    softWrapAtPreferredLineLength: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "8168b0ab-f987-472c-a4f4-243d257e7cef"
+  "gruvbox-plus-syntax":
+    contrast: "Soft"
+  useCustomTitleBar: true
+  welcome:
+    showOnStartup: false
