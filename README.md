@@ -24,6 +24,8 @@ Hides untracked files when using `dotfiles status`, since the majority of the fi
 * `echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc`  
 Adds the alias to our shell config, which is optional
 
+Further reading can be found [here](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/).
+
 ## Usage
 All the dotfiles stay in our home directory. If we want to track a file, we simply check it in with our `dotfiles` alias like so:
 
