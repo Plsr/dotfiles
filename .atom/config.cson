@@ -15,6 +15,7 @@
     userId: "8168b0ab-f987-472c-a4f4-243d257e7cef"
   "gruvbox-plus-syntax":
     contrast: "Soft"
+  "tree-view": {}
   useCustomTitleBar: true
   welcome:
     showOnStartup: false
