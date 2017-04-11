@@ -46,3 +46,4 @@ And then commit and push the same way.
 * Install [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/)
 * Install [rbenv](https://github.com/rbenv/rbenv)
 * Install [nvm](https://github.com/creationix/nvm)
+* Install [atom](https://atom.io/)
