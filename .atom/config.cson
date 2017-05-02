@@ -5,17 +5,19 @@
       "one-dark-ui"
       "gruvbox-plus-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
     showIndentGuide: true
     showInvisibles: true
-    softWrapAtPreferredLineLength: true
+    softWrap: true
+    softWrapHangingIndent: 4
     tabType: "soft"
   "exception-reporting":
     userId: "8168b0ab-f987-472c-a4f4-243d257e7cef"
   "gruvbox-plus-syntax":
     contrast: "Soft"
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   useCustomTitleBar: true
   welcome:
     showOnStartup: false

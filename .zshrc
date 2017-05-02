@@ -13,7 +13,7 @@ ZSH_THEME="miloshadzic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git bundler rails)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,6 +37,9 @@ fi
 
 # Add rbenv to PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
+
+# Add LaTeX to path
+export PATH="/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PATH"
 
 # Autmoatically load rbenv
 eval "$(rbenv init -)"
