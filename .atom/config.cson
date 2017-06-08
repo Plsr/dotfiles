@@ -1,12 +1,21 @@
 "*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#968b5f"
+    tabs:
+      compactTabs: true
+    ui:
+      panelContrast: true
   core:
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
+      "atom-material-ui"
       "gruvbox-plus-syntax"
     ]
     titleBar: "custom"
   editor:
+    fontFamily: "Fira Mono"
+    lineHeight: 1.8
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -16,8 +25,11 @@
     userId: "8168b0ab-f987-472c-a4f4-243d257e7cef"
   "gruvbox-plus-syntax":
     contrast: "Soft"
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "one-dark-ui":
+    hideDockButtons: true
+  "spell-check":
+    useLocales: false
+  "tree-view": {}
   useCustomTitleBar: true
   welcome:
     showOnStartup: false
