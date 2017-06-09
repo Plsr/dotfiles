@@ -14,7 +14,7 @@
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "Fira Mono"
+    fontFamily: "Fira Mono for Powerline"
     lineHeight: 1.8
     showIndentGuide: true
     showInvisibles: true
