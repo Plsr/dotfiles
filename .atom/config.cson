@@ -1,7 +1,7 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor: "#968b5f"
+      abaseColor: "#ac5ab5"
     tabs:
       compactTabs: true
     ui:
@@ -16,19 +16,33 @@
   editor:
     fontFamily: "Fira Mono for Powerline"
     lineHeight: 1.8
+    preferredLineLength: 120
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+    softWrapAtPreferredLineLength: true
     softWrapHangingIndent: 4
     tabType: "soft"
   "exception-reporting":
     userId: "8168b0ab-f987-472c-a4f4-243d257e7cef"
   "gruvbox-plus-syntax":
     contrast: "Soft"
+  latex: {}
   "one-dark-ui":
     hideDockButtons: true
   "spell-check":
-    useLocales: false
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.tex.latex"
+    ]
+    locales: [
+      "de-DE"
+      "en-US"
+    ]
   "tree-view": {}
   useCustomTitleBar: true
   welcome:
