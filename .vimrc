@@ -9,6 +9,21 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Show indention levels
+Plugin 'Yggdroot/indentLine'
+
+" NERDTree
+Plugin 'scrooloose/nerdtree'
+
+" Vim Ariline
+Plugin 'vim-airline/vim-airline'
+
+" Command-T
+Plugin 'wincent/command-t'
+
+" JSX Syntac Highlighting
+Plugin 'mxw/vim-jsx'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -20,9 +35,30 @@ filetype plugin indent on    " required
 syntax on
 
 " Editor Settings --------------------------------------------
+
 " show existing tab with 4 spaces width
 set tabstop=2
 " " when indenting with '>', use 4 spaces width
 set shiftwidth=2
 " " On pressing tab, insert 4 spaces
 set expandtab
+" Enbale line numbers
+set number
+" Set new symbols for whitespace and eol
+set listchars=tab:▸\ ,eol:¬
+" Enable display of whitespace and eol characters by default
+set list
+"Invisible character colors 
+hi NonText ctermfg=247
+hi SpecialKey ctermfg=247
+
+" NERDTree Configuration -------------------------------------
+
+" Automatically close NERDTree if it is the last remaining buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Autmoatically start NERDTree on launch
+autocmd vimenter * NERDTree
+
+" Jump to the main window.
+autocmd VimEnter * wincmd p
