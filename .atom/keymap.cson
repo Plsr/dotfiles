@@ -34,3 +34,7 @@
 # Enable Emmet tab completion in jsx files
 'atom-text-editor[data-grammar~="jsx"]:not([mini])':
   'tab': 'emmet:expand-abbreviation-with-tab'
+
+# Pseudo-Map 'j k' to esc in vim-mode-plus
+'atom-text-editor.vim-mode-plus:not(.normal-mode)':
+  'j k': 'vim-mode-plus:activate-normal-mode'
