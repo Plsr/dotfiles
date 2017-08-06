@@ -28,6 +28,8 @@
   "gruvbox-plus-syntax":
     contrast: "Soft"
   latex: {}
+  "linter-ui-default":
+    panelHeight: 81
   "one-dark-ui":
     hideDockButtons: true
   "spell-check":
@@ -43,7 +45,8 @@
       "de-DE"
       "en-US"
     ]
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   useCustomTitleBar: true
   welcome:
     showOnStartup: false
