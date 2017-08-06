@@ -24,6 +24,12 @@ Plugin 'wincent/command-t'
 " JSX Syntac Highlighting
 Plugin 'mxw/vim-jsx'
 
+" Gruvbox color scheme
+Plugin 'morhetz/gruvbox'
+
+" Add Icons to files in NERDTree
+Plugin 'ryanoasis/vim-devicons'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -31,8 +37,18 @@ filetype plugin indent on    " required
 "filetype plugin on
 
 " Syntax Highlighting -----------------------------------------
+
+set encoding=utf8
+let g:airline_powerline_fonts = 1
+set guifont=Fira\ Mono\ for\ Powerline:h14
+
 " Permanently enable syntax highlighting
 syntax on
+
+" Color Scheme
+colorscheme gruvbox
+
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 " Editor Settings --------------------------------------------
 
@@ -51,6 +67,14 @@ set list
 "Invisible character colors 
 hi NonText ctermfg=247
 hi SpecialKey ctermfg=247
+
+" AutoClose Brackets etc.
+ino " ""<left>
+ino ' ''<left>
+ino ( ()<left>
+ino [ []<left>
+ino { {}<left>
+ino {<CR> {<CR>}<ESC>O
 
 " NERDTree Configuration -------------------------------------
 
