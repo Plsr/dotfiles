@@ -1,20 +1,27 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor: "#ac5ab5"
+      abaseColor: "#b52f52"
     tabs:
       compactTabs: true
     ui:
       panelContrast: true
+  "atom-spotify2":
+    displayOnLeftSide: false
+    showEqualizer: true
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+    useCoreMovementCommands: false
   core:
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
-      "gruvbox-plus-syntax"
+      "cobalt2-syntax"
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "Fira Mono for Powerline"
+    fontFamily: "Fira Code"
+    fontSize: 15
     lineHeight: 1.8
     preferredLineLength: 120
     showIndentGuide: true
@@ -29,7 +36,8 @@
     contrast: "Soft"
   latex: {}
   "linter-ui-default":
-    panelHeight: 81
+    panelHeight: 60
+    showPanel: true
   "one-dark-ui":
     hideDockButtons: true
   "spell-check":
@@ -45,8 +53,7 @@
       "de-DE"
       "en-US"
     ]
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   useCustomTitleBar: true
   welcome:
     showOnStartup: false
