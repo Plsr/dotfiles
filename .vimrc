@@ -27,8 +27,8 @@ Plugin 'mxw/vim-jsx'
 " Gruvbox color scheme
 Plugin 'morhetz/gruvbox'
 
-" Add Icons to files in NERDTree
-Plugin 'ryanoasis/vim-devicons'
+" JS Syntax
+Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,16 +47,17 @@ syntax on
 
 " Color Scheme
 colorscheme gruvbox
+set background=dark
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 " Editor Settings --------------------------------------------
 
-" show existing tab with 4 spaces width
+" show existing tab with 2 spaces width
 set tabstop=2
-" " when indenting with '>', use 4 spaces width
+" " when indenting with '>', use 2 spaces width
 set shiftwidth=2
-" " On pressing tab, insert 4 spaces
+" " On pressing tab, insert 2 spaces
 set expandtab
 " Enbale line numbers
 set number
@@ -67,6 +68,12 @@ set list
 "Invisible character colors 
 hi NonText ctermfg=247
 hi SpecialKey ctermfg=247
+
+" Change line height (only works for gvim)
+set linespace=4
+
+" Set Gui Font
+set guifont=Inconsolata\ for\ Powerline:h15
 
 " AutoClose Brackets etc.
 ino " ""<left>
