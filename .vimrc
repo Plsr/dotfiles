@@ -30,6 +30,10 @@ Plugin 'morhetz/gruvbox'
 " JS Syntax
 Plugin 'pangloss/vim-javascript'
 
+"Mardown support
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
