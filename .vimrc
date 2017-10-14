@@ -122,5 +122,10 @@ let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 " Clear search highlighting on pressing space
 nnoremap <Space> :noh<CR>
 
-" Source vimrc on Leader-sv
-nmap <silent> <leader>sv :so ~/.vimrc<CR>
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
+" Open .vimrc on leader-v
+nmap <leader>v :tabedit $MYVIMRC<CR>
