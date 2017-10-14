@@ -118,6 +118,9 @@ let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 
 " Custom keymaps -----------------------------------------------
 
+" Set , to leader
+let mapleader = ","
+
 " Remap Ctrl-L to trigger esc
 :imap <C-L> <Esc>
 
