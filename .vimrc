@@ -18,21 +18,23 @@ Plugin 'scrooloose/nerdtree'
 " Vim Ariline
 Plugin 'vim-airline/vim-airline'
 
-" Command-T
-Plugin 'wincent/command-t'
+"Crtl-P
+Plugin 'ctrlpvim/ctrlp.vim'
 
-" JSX Syntac Highlighting
-Plugin 'mxw/vim-jsx'
-
-" Gruvbox color scheme
+" Color Schemes
 Plugin 'morhetz/gruvbox'
+Plugin 'joshdick/onedark.vim'
 
 " JS Syntax
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 "Mardown support
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+
+" Linting support
+Plugin 'vim-syntastic/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,7 +52,7 @@ set guifont=Fira\ Mono\ for\ Powerline:h14
 syntax on
 
 " Color Scheme
-colorscheme gruvbox
+colorscheme onedark
 set background=dark
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
@@ -79,6 +81,9 @@ set linespace=4
 " Set Gui Font
 set guifont=Inconsolata\ for\ Powerline:h15
 
+" Set wrap length
+:set tw=80
+
 " AutoClose Brackets etc.
 ino " ""<left>
 ino ' ''<left>
@@ -97,3 +102,25 @@ autocmd vimenter * NERDTree
 
 " Jump to the main window.
 autocmd VimEnter * wincmd p
+
+" Syntsastic Eslint Config
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe = 'npm run lint --'
+
+" Custom keymaps -----------------------------------------------
+
+" Remap Ctrl-L to trigger esc
+:imap <C-L> <Esc>
+
+" Clear search highlighting on pressing space
+nnoremap <Space> :noh<CR>
+
+" Source vimrc on Leader-sv
+nmap <silent> <leader>sv :so ~/.vimrc<CR>
