@@ -55,6 +55,8 @@ syntax on
 colorscheme onedark
 set background=dark
 
+set hlsearch
+
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 " Editor Settings --------------------------------------------
