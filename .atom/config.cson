@@ -22,7 +22,7 @@
   editor:
     fontFamily: "Fira Code"
     fontSize: 15
-    lineHeight: 1.8
+    lineHeight: 2
     preferredLineLength: 120
     showIndentGuide: true
     showInvisibles: true
@@ -36,10 +36,13 @@
     contrast: "Soft"
   latex: {}
   "linter-ui-default":
-    panelHeight: 60
+    panelHeight: 126
     showPanel: true
   "one-dark-ui":
     hideDockButtons: true
+  "one-vibrancy":
+    effect: "dark"
+  pigments: {}
   "spell-check":
     grammars: [
       "source.asciidoc"
@@ -55,5 +58,7 @@
     ]
   "tree-view": {}
   useCustomTitleBar: true
+  "vim-mode-plus-ex-mode":
+    notifiedUseExMode: true
   welcome:
     showOnStartup: false
