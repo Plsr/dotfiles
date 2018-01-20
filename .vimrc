@@ -100,13 +100,6 @@ set guifont=Inconsolata\ for\ Powerline:h16
 " Remove scrollbars from MacVim
 set guioptions=
 
-" AutoClose Brackets etc.
-ino " ""<left>
-ino ' ''<left>
-ino ( ()<left>
-ino [ []<left>
-ino { {}<left>
-ino {<CR> {<CR>}<ESC>O
 
 set foldenable " enable folding
 set foldlevelstart=10   " open most folds by default
