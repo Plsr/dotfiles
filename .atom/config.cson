@@ -1,7 +1,12 @@
 "*":
+  "":
+    yaml:
+      text:
+        whitespace:
+          removeTrailingWhitespace: false
   "atom-material-ui":
     colors:
-      abaseColor: "#b52f52"
+      abaseColor: "#225262"
     tabs:
       compactTabs: true
     ui:
@@ -13,6 +18,9 @@
     confirmCompletion: "enter"
     useCoreMovementCommands: false
   core:
+    disabledPackages: [
+      "spell-check"
+    ]
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
@@ -20,7 +28,7 @@
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "Fira Code"
+    fontFamily: "Source Code Pro"
     fontSize: 15
     lineHeight: 2
     preferredLineLength: 120
@@ -35,9 +43,7 @@
   "gruvbox-plus-syntax":
     contrast: "Soft"
   latex: {}
-  "linter-ui-default":
-    panelHeight: 126
-    showPanel: true
+  "linter-ui-default": {}
   "one-dark-ui":
     hideDockButtons: true
   "one-vibrancy":
@@ -57,8 +63,14 @@
       "en-US"
     ]
   "tree-view": {}
+  typewriter:
+    enabledForAllScopes: true
+    showGutter: true
   useCustomTitleBar: true
+  "vim-mode-plus": {}
   "vim-mode-plus-ex-mode":
     notifiedUseExMode: true
   welcome:
     showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false

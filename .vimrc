@@ -21,6 +21,9 @@ Plugin 'vim-airline/vim-airline'
 "Crtl-P
 Plugin 'ctrlpvim/ctrlp.vim'
 
+" Emmet
+Plugin 'mattn/emmet-vim'
+
 " Color Schemes
 Plugin 'morhetz/gruvbox'
 Plugin 'joshdick/onedark.vim'
@@ -33,8 +36,14 @@ Plugin 'mxw/vim-jsx'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
-" Linting support
-Plugin 'vim-syntastic/syntastic'
+
+Plugin 'sjl/gundo.vim'
+
+Plugin 'tpope/vim-surround' 
+
+Plugin 'w0rp/ale'
+
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -69,6 +78,8 @@ set shiftwidth=2
 set expandtab
 " Enbale line numbers
 set number
+set cursorline " highlight line the cursor is in
+set showmatch  " highlight matching [{()}]
 " Set new symbols for whitespace and eol
 set listchars=tab:▸\ ,eol:¬
 " Enable display of whitespace and eol characters by default
@@ -78,13 +89,16 @@ hi NonText ctermfg=247
 hi SpecialKey ctermfg=247
 
 " Change line height (only works for gvim)
-set linespace=4
+set linespace=8
 
 " Set Gui Font
-set guifont=Inconsolata\ for\ Powerline:h15
+set guifont=Inconsolata\ for\ Powerline:h16
 
 " Set wrap length
 :set tw=80
+
+" Remove scrollbars from MacVim
+set guioptions=
 
 " AutoClose Brackets etc.
 ino " ""<left>
@@ -93,6 +107,12 @@ ino ( ()<left>
 ino [ []<left>
 ino { {}<left>
 ino {<CR> {<CR>}<ESC>O
+
+set foldenable " enable folding
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+nnoremap <c-y> za " space open/closes folds
+set foldmethod=indent   " fold based on indent level
 
 " NERDTree Configuration -------------------------------------
 
@@ -105,16 +125,28 @@ autocmd vimenter * NERDTree
 " Jump to the main window.
 autocmd VimEnter * wincmd p
 
+" Linter configuration -------------------------------------
 " Syntsastic Eslint Config
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe = 'npm run lint --'
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 0
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_javascript_eslint_exe='npm run lint --'
+
+" Syntastic needs the eslint executable in the path
+if $PATH !~ "\eslint"
+    let $PATH="/Users/chrispop/.nvm/versions/node/v8.4.0/bin/eslint" . $PATH
+endif
+
+" CTRL-P Configuration ----------------------------------------
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git' " ignore certain directories
 
 " Custom keymaps -----------------------------------------------
 
@@ -129,8 +161,11 @@ nnoremap <Space> :noh<CR>
 
 " Source the vimrc file after saving it
 if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
+  autocmd bufwritepost .vimrc nested source $MYVIMRC
 endif
 
 " Open .vimrc on leader-v
 nmap <leader>v :tabedit $MYVIMRC<CR>
+
+" toggle gundo
+nnoremap <leader>u :GundoToggle<CR>
