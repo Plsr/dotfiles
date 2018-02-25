@@ -43,8 +43,14 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'w0rp/ale'
 
+" Git
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+
+" Rails
+Plugin 'tpope/vim-rails'
+Plugin 'thoughtbot/vim-rspec'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
