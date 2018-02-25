@@ -15,20 +15,23 @@
     displayOnLeftSide: false
     showEqualizer: true
   "autocomplete-plus":
-    confirmCompletion: "enter"
+    confirmCompletion: "tab"
     useCoreMovementCommands: false
   core:
     disabledPackages: [
       "spell-check"
     ]
+    packagesWithKeymapsDisabled: [
+      "emmet"
+    ]
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
-      "cobalt2-syntax"
+      "one-dark-syntax"
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "Source Code Pro"
+    fontFamily: "Hack"
     fontSize: 15
     lineHeight: 2
     preferredLineLength: 120
