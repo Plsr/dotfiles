@@ -47,3 +47,9 @@ And then commit and push the same way.
 * Install [rbenv](https://github.com/rbenv/rbenv)
 * Install [nvm](https://github.com/creationix/nvm)
 * Install [atom](https://atom.io/)
+
+## Vim Plugin Installation
+Plugins are installed via Vundle, so there is little to worry about. However, in
+order for YouCompleteMe to work on a new maschine, it needs to be recomiled.
+Follow the [insallation guidelines in the official
+repository.](https://github.com/Valloric/YouCompleteMe#mac-os-x)
