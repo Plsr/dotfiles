@@ -51,6 +51,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'thoughtbot/vim-rspec'
 
+" Notes & Orga
+Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-misc'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
