@@ -68,10 +68,13 @@ filetype plugin indent on    " required
 
 set encoding=utf8
 let g:airline_powerline_fonts = 1
-set guifont=Fira\ Mono\ for\ Powerline:h14
+set guifont=Fira\ Mono\ for\ Powerline:h16
 
 " Permanently enable syntax highlighting
 syntax on
+
+" User older verion of regex engine, should improve speed
+set re=1
 
 " Color Scheme
 colorscheme onedark
@@ -91,7 +94,6 @@ set shiftwidth=2
 set expandtab
 " Enbale line numbers
 set number
-set cursorline " highlight line the cursor is in
 set showmatch  " highlight matching [{()}]
 " Set new symbols for whitespace and eol
 set listchars=tab:▸\ ,eol:¬
@@ -104,9 +106,6 @@ hi SpecialKey ctermfg=247
 " Change line height (only works for gvim)
 set linespace=8
 
-" Set Gui Font
-set guifont=Inconsolata\ for\ Powerline:h16
-
 " Set wrap length
 :set tw=80
 
@@ -117,7 +116,7 @@ set guioptions=
 set foldenable " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
-nnoremap <c-y> za " space open/closes folds
+nnoremap <c-y> za       " space open/closes folds
 set foldmethod=indent   " fold based on indent level
 
 " NERDTree Configuration -------------------------------------
@@ -130,18 +129,6 @@ autocmd vimenter * NERDTree
 
 " Jump to the main window.
 autocmd VimEnter * wincmd p
-
-" Linter configuration -------------------------------------
-" Syntsastic Eslint Config
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 0
-"let g:syntastic_check_on_wq = 0
-"let g:syntastic_javascript_checkers = ['eslint']
-"let g:syntastic_javascript_eslint_exe='npm run lint --'
 
 " Syntastic needs the eslint executable in the path
 if $PATH !~ "\eslint"
@@ -175,3 +162,9 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
