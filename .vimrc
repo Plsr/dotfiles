@@ -33,15 +33,9 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
 "Mardown support
-Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
-
-Plugin 'sjl/gundo.vim'
-
 Plugin 'tpope/vim-surround' 
-
-Plugin 'w0rp/ale'
 
 " Git
 Plugin 'airblade/vim-gitgutter'
@@ -68,16 +62,14 @@ filetype plugin indent on    " required
 
 set encoding=utf8
 let g:airline_powerline_fonts = 1
-set guifont=Fira\ Mono\ for\ Powerline:h16
+set guifont=Fira\ Mono\ for\ Powerline:h14
 
 " Permanently enable syntax highlighting
 syntax on
 
-" User older verion of regex engine, should improve speed
-set re=1
 
 " Color Scheme
-colorscheme onedark
+colorscheme gruvbox
 set background=dark
 
 set hlsearch
@@ -107,11 +99,17 @@ hi SpecialKey ctermfg=247
 set linespace=8
 
 " Set wrap length
-:set tw=80
+set tw=80
 
 " Remove scrollbars from MacVim
 set guioptions=
 
+" Faster rendering
+set ttyfast
+set lazyredraw
+
+" User older verion of regex engine, should improve speed
+set re=1
 
 set foldenable " enable folding
 set foldlevelstart=10   " open most folds by default
@@ -154,7 +152,9 @@ nnoremap <Space> :noh<CR>
 
 " Source the vimrc file after saving it
 if has("autocmd")
-  autocmd bufwritepost .vimrc nested source $MYVIMRC
+  augroup AutoSource
+    autocmd bufwritepost .vimrc nested source $MYVIMRC
+  augroup END
 endif
 
 " Open .vimrc on leader-v
