@@ -27,6 +27,8 @@ Plugin 'mattn/emmet-vim'
 " Color Schemes
 Plugin 'morhetz/gruvbox'
 Plugin 'joshdick/onedark.vim'
+Plugin 'romainl/Apprentice'
+
 
 " JS Syntax
 Plugin 'pangloss/vim-javascript'
@@ -62,14 +64,14 @@ filetype plugin indent on    " required
 
 set encoding=utf8
 let g:airline_powerline_fonts = 1
-set guifont=Fira\ Mono\ for\ Powerline:h14
+set guifont=Fira\ Mono\ for\ Powerline:h16
 
 " Permanently enable syntax highlighting
 syntax on
 
 
 " Color Scheme
-colorscheme gruvbox
+colorscheme apprentice
 set background=dark
 
 set hlsearch
