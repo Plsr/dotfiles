@@ -152,6 +152,19 @@ let mapleader = ","
 " Clear search highlighting on pressing space
 nnoremap <Space> :noh<CR>
 
+" Splits ---------------------------------------------------------
+
+" New splits start to the right an bottom
+set splitbelow
+set splitright
+
+" Make navigating between splits easier, just use ctrl-l instead
+" of ctrl-w l
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Source the vimrc file after saving it
 if has("autocmd")
   augroup AutoSource
