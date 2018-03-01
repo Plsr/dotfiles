@@ -88,6 +88,10 @@ set shiftwidth=2
 set expandtab
 " Enbale line numbers
 set number
+
+" Display relative line numbers
+set relativenumber
+
 set showmatch  " highlight matching [{()}]
 " Set new symbols for whitespace and eol
 set listchars=tab:▸\ ,eol:¬
