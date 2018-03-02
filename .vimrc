@@ -16,7 +16,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdtree'
 
 " Vim Ariline
-Plugin 'vim-airline/vim-airline'
+Plugin 'itchyny/lightline.vim'
 
 "Crtl-P
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -25,10 +25,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 
 " Color Schemes
-Plugin 'morhetz/gruvbox'
-Plugin 'joshdick/onedark.vim'
 Plugin 'romainl/Apprentice'
-
 
 " JS Syntax
 Plugin 'pangloss/vim-javascript'
@@ -64,16 +61,22 @@ filetype plugin indent on    " required
 
 set encoding=utf8
 let g:airline_powerline_fonts = 1
-set guifont=Fira\ Mono\ for\ Powerline:h16
 
 " Permanently enable syntax highlighting
 syntax on
 
+" Setup terminal and tmux for syntax highlighting in terminal vim
+set t_Co=256
+if &term =~# '^screen'
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+set termguicolors
 
-" Color Scheme
+" set color scheme
 colorscheme apprentice
-set background=dark
 
+" Highlight search results
 set hlsearch
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
