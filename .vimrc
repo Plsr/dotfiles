@@ -9,9 +9,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" Show indention levels
-Plugin 'Yggdroot/indentLine'
-
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 
@@ -136,6 +133,9 @@ autocmd vimenter * NERDTree
 
 " Jump to the main window.
 autocmd VimEnter * wincmd p
+
+" Map NERDTRee toggle to CRTL-N
+map <C-n> :NERDTreeToggle<CR>
 
 " Syntastic needs the eslint executable in the path
 if $PATH !~ "\eslint"

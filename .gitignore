@@ -47,4 +47,6 @@ Session.vim
 # auto-generated tag files
 tags
 
+# SSH folder
+.shh/
 # End of https://www.gitignore.io/api/vim
