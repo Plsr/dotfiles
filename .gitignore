@@ -48,5 +48,5 @@ Session.vim
 tags
 
 # SSH folder
-.shh/
+.ssh/
 # End of https://www.gitignore.io/api/vim
