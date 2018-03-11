@@ -12,6 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'Yggdroot/indentLine'
+
 " Vim Ariline
 Plugin 'itchyny/lightline.vim'
 
@@ -23,6 +25,7 @@ Plugin 'mattn/emmet-vim'
 
 " Color Schemes
 Plugin 'romainl/Apprentice'
+Plugin 'arcticicestudio/nord-vim'
 
 " JS Syntax
 Plugin 'pangloss/vim-javascript'
@@ -71,7 +74,7 @@ endif
 set termguicolors
 
 " set color scheme
-colorscheme apprentice
+colorscheme nord
 
 " Highlight search results
 set hlsearch
@@ -190,3 +193,4 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
