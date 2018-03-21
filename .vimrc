@@ -131,9 +131,6 @@ set foldmethod=indent   " fold based on indent level
 " Automatically close NERDTree if it is the last remaining buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Autmoatically start NERDTree on launch
-autocmd vimenter * NERDTree
-
 " Jump to the main window.
 autocmd VimEnter * wincmd p
 
