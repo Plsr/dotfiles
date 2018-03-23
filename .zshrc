@@ -21,6 +21,9 @@ source "${HOME}/.shell/prompt.sh"
 # PATH #
 ########
 
+# Make sure the right python version is used
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # Add rbenv to PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 
