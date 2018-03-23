@@ -19,3 +19,8 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 # Rails #
 #########
 alias rs="rails server"
+
+#######
+# Vim #
+#######
+alias vim="nvim"
