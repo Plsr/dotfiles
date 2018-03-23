@@ -48,8 +48,18 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
 
+" Linitng Support
+Plugin 'w0rp/ale'
+
 " Autocompletion
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'carlitux/deoplete-ternjs' 
+
+Plugin 'vim-airline/vim-airline'
+
+Plugin 'epilande/vim-react-snippets'
+Plugin 'epilande/vim-es2015-snippets'
+Plugin 'SirVer/ultisnips'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -180,7 +190,7 @@ if has("autocmd")
 endif
 
 " Open .vimrc on leader-v
-nmap <leader>v :tabedit $MYVIMRC<CR>
+nmap <leader>v :tabedit $HOME/.vimrc<CR>
 
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
@@ -191,3 +201,11 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+" Start deoplete on vim startup
+let g:deoplete#enable_at_startup = 1
+
+" Enable smarter tabline for vim airline
+let g:airline#extensions#tabline#enabled = 1
+
+" Enable React snippets
+let g:UltiSnipsExpandTrigger="<C-l>"
