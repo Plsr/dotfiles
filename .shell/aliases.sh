@@ -11,6 +11,7 @@ alias gst="git status"
 alias ga="git add"
 alias gc="git commit"
 alias gp="git push"
+alias gb="git branch"
 alias gco="git checkout"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
