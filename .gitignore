@@ -50,3 +50,5 @@ tags
 # SSH folder
 .ssh/
 # End of https://www.gitignore.io/api/vim
+#
+.tern-port
