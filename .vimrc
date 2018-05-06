@@ -1,8 +1,6 @@
 " Vundle Setup ----------------------------------------------
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -24,8 +22,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 
 " Color Schemes
-Plugin 'romainl/Apprentice'
-Plugin 'arcticicestudio/nord-vim'
+Plugin 'dylanaraps/wal.vim'
 
 " JS Syntax
 Plugin 'pangloss/vim-javascript'
@@ -55,8 +52,8 @@ Plugin 'w0rp/ale'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'carlitux/deoplete-ternjs' 
 
-Plugin 'vim-airline/vim-airline'
 
+" JS/React helpers
 Plugin 'epilande/vim-react-snippets'
 Plugin 'epilande/vim-es2015-snippets'
 Plugin 'SirVer/ultisnips'
@@ -81,10 +78,9 @@ if &term =~# '^screen'
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 endif
-set termguicolors
 
 " set color scheme
-colorscheme nord
+colorscheme wal
 
 " Highlight search results
 set hlsearch
@@ -106,10 +102,6 @@ set number
 set relativenumber
 
 set showmatch  " highlight matching [{()}]
-" Set new symbols for whitespace and eol
-set listchars=tab:▸\ ,eol:¬
-" Enable display of whitespace and eol characters by default
-set list
 "Invisible character colors 
 hi NonText ctermfg=247
 hi SpecialKey ctermfg=247
@@ -209,3 +201,16 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Enable React snippets
 let g:UltiSnipsExpandTrigger="<C-l>"
+
+" Automatically change pwd to opened directory
+set autochdir
+
+" Set folder for vim notes
+let g:notes_directories = ['~/Documents/Notes']
+language en_US
+
+set noshowmode
+
+let g:lightline = {
+  \ 'colorscheme': 'wal',
+  \ }
