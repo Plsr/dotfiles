@@ -38,3 +38,7 @@ export NVM_DIR="$HOME/.nvm"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Reload last pywal color scheme on startup
+(cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh
