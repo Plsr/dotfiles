@@ -22,10 +22,10 @@ source "${HOME}/.shell/prompt.sh"
 ########
 
 # Make sure the right python version is used
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Add rbenv to PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
+PATH="$HOME/.rbenv/bin:$PATH"
 
 # Autmoatically load rbenv
 eval "$(rbenv init -)"
@@ -35,10 +35,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Andriod
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Use genymotion ADB
+PATH=$PATH:/Applications/Genymotion.app/Contents/MacOS/Tools
 
 # Reload last pywal color scheme on startup
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
+
+export PATH
