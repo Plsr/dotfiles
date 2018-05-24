@@ -20,3 +20,6 @@ alias vim="nvim"
 
 # Eyecandy
 alias colorscheme="wal -i $HOME/Pictures/Wallpapers"
+alias rwm="brew services restart chunkwm"
+alias ewm="brew services exit chunkwm"
+alias swm="brew services start chunkwm"
