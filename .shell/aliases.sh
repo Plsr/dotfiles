@@ -15,11 +15,8 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 # Rails
 alias rs="rails server"
 
-# Vim
-alias vim="nvim"
-
 # Eyecandy
 alias colorscheme="wal -i $HOME/Pictures/Wallpapers"
 alias rwm="brew services restart chunkwm"
-alias ewm="brew services exit chunkwm"
+alias ewm="brew services stop chunkwm"
 alias swm="brew services start chunkwm"
