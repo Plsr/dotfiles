@@ -39,8 +39,4 @@ export NVM_DIR="$HOME/.nvm"
 # Use genymotion ADB
 PATH=$PATH:/Applications/Genymotion.app/Contents/MacOS/Tools
 
-# Reload last pywal color scheme on startup
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
-
 export PATH
