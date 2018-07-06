@@ -23,6 +23,7 @@ Plugin 'Yggdroot/indentLine'
 
 " Color Scheme
 Plugin 'dylanaraps/wal.vim'
+Plugin 'joshdick/onedark.vim'
 
 " JS Syntax
 Plugin 'pangloss/vim-javascript'
@@ -79,7 +80,7 @@ if &term =~# '^screen'
 endif
 
 " set color scheme
-colorscheme wal
+colorscheme onedark
 
 " Highlight search results
 set hlsearch
