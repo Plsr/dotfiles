@@ -5,8 +5,9 @@ tap "homebrew/cask"
 brew "mas"
 brew "git"
 brew "vim", args: ["with-override-system-vi"]
+brew "rbenv"
 
-# Apllication binaries installed via cask
+# Application binaries installed via cask
 cask "firefox"
 cask "dropbox"
 cask "iterm2"
