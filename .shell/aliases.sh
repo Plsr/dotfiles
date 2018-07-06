@@ -1,6 +1,9 @@
 # Movement
 alias ..="cd .."
 
+# Dotfiles
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 # Git
 alias g="git"
 alias gst="git status"
