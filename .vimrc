@@ -1,3 +1,11 @@
+" Apparently, vim is not yet ready for Python 3.7
+" This executes python once, silent, swallowing the error messages
+" Should be removable in the future.
+" Issue: https://github.com/vim/vim/issues/3117
+if has('python3')
+  silent! python3 1
+endif
+
 " Vundle Setup ----------------------------------------------
 set nocompatible              " be iMproved, required
 filetype off                  " required
