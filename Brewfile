@@ -17,3 +17,4 @@ cask "alfred"
 # Applications installed from the macOS AppStore,
 # using mas
 mas "Telegram", id: 747648890
+mas "Reeder 3", id: 880001334
