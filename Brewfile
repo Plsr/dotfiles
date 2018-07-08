@@ -13,6 +13,7 @@ cask "dropbox"
 cask "iterm2"
 cask "slack"
 cask "alfred"
+cask "spotify"
 
 # Applications installed from the macOS AppStore,
 # using mas
