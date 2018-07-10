@@ -32,7 +32,7 @@ eval "$(rbenv init -)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+. "/usr/local/opt/nvm/nvm.sh"
 
 # Andriod
 

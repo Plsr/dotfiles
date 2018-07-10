@@ -8,6 +8,7 @@ brew "vim", args: ["with-override-system-vi"]
 brew "tmux"
 brew "reattach-to-user-namespace"
 brew "rbenv"
+brew "nvm"
 
 # Application binaries installed via cask
 cask "firefox"
