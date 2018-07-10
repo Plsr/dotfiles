@@ -10,6 +10,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>OneDark</key>
@@ -741,9 +743,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>833 116 645 312 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>657 565 796 473 0 0 1920 1057 </string>
+	<string>746 400 770 429 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>526 238 1045 621 0 0 1920 1057 </string>
+	<string>280 132 1225 824 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1477,6 +1479,12 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>B0D9430E-B28A-4B37-99D6-B8D928C4B113</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>552582555.78440797</real>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -1527,9 +1535,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-07-06T15:10:09Z</date>
+	<date>2018-07-09T10:00:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>TabStyle</key>
+	<integer>1</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
