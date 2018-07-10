@@ -50,6 +50,9 @@ Plugin 'epilande/vim-react-snippets'
 Plugin 'epilande/vim-es2015-snippets'
 Plugin 'SirVer/ultisnips'
 
+" Writing prose
+Plugin 'junegunn/goyo.vim'
+
 " fzf (fuzzy finder)
 set rtp+=/usr/local/opt/fzf
 Plugin 'junegunn/fzf.vim'
