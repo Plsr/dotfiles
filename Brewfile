@@ -17,6 +17,7 @@ cask "iterm2"
 cask "slack"
 cask "alfred"
 cask "spotify"
+cask "pomodone"
 
 # Applications installed from the macOS AppStore,
 # using mas
