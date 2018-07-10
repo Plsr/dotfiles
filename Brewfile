@@ -5,6 +5,8 @@ tap "homebrew/cask"
 brew "mas"
 brew "git"
 brew "vim", args: ["with-override-system-vi"]
+brew "tmux"
+brew "reattach-to-user-namespace"
 brew "rbenv"
 
 # Application binaries installed via cask
@@ -19,3 +21,4 @@ cask "spotify"
 # using mas
 mas "Telegram", id: 747648890
 mas "Reeder 3", id: 880001334
+mas "Todoist: Organize your life", id: 585829637
