@@ -24,3 +24,4 @@ cask "pomodone"
 mas "Telegram", id: 747648890
 mas "Reeder 3", id: 880001334
 mas "Todoist: Organize your life", id: 585829637
+mas "Pages", id: 409201541
