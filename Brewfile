@@ -9,6 +9,10 @@ brew "tmux"
 brew "reattach-to-user-namespace"
 brew "rbenv"
 brew "nvm"
+brew "yarn"
+brew "postgres"
+brew "fzf"
+brew "the_silver_searcher"
 
 # Application binaries installed via cask
 cask "firefox"
