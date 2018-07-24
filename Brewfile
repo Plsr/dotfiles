@@ -24,6 +24,7 @@ cask "alfred"
 cask "spotify"
 cask "pomodone"
 cask "font-iosevka-nerd-font"
+cask "postico"
 
 # Applications installed from the macOS AppStore,
 # using mas
@@ -32,3 +33,5 @@ mas "Reeder 3", id: 880001334
 mas "Pages", id: 409201541
 mas "Spark - Love your email again", id: 1176895641
 mas "Things 3", id: 904280696
+mas "Tweetbot 3 for Twitter", id: 1384080005
+mas "Freckle", id: 879917538
