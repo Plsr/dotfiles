@@ -1,5 +1,6 @@
 # Taps
 tap "homebrew/cask"
+tap "caskroom/fonts"
 
 # Hombrew Formulae
 brew "mas"
@@ -22,6 +23,7 @@ cask "slack"
 cask "alfred"
 cask "spotify"
 cask "pomodone"
+cask "font-iosevka-nerd-font"
 
 # Applications installed from the macOS AppStore,
 # using mas
