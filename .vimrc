@@ -50,6 +50,10 @@ Plugin 'epilande/vim-react-snippets'
 Plugin 'epilande/vim-es2015-snippets'
 Plugin 'SirVer/ultisnips'
 
+" Taking notes
+Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-misc'
+
 " Writing prose
 Plugin 'junegunn/goyo.vim'
 
@@ -199,3 +203,5 @@ language en_US
 set noshowmode
 
 set backspace=indent,eol,start
+
+:let g:notes_directories = ['~//Dropbox (Personal)/notes']
