@@ -35,21 +35,51 @@ All the dotfiles stay in our home directory. If we want to track a file, we simp
 
 And then commit and push the same way.
 
-## What to install
-*A list of tools that need to be installed and settings to be applied for the dotfiles to work properly. Maybe this should be in a script*
+### Move to a new machine
 
-* Install command line tools via `xcode-select --install` to be able to use git. Alternatively, you can install git via homebrew.
-* Switch Shell to zsh via `chsh -s $(which zsh)`
-* Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-* Install [Homebrew](https://brew.sh/)
-* Install tmux via `brew install tmux`
-* Install [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/)
-* Install [rbenv](https://github.com/rbenv/rbenv)
-* Install [nvm](https://github.com/creationix/nvm)
-* Install [atom](https://atom.io/)
+It's just a Git Repo. But you can't clone into a directory with existing files, like macOS will write some files into the home directory.
+
+1. Clone into a directory with a seperate git directory and a temporary directory as working tree.
+   ```sh
+   git clone --separate-git-dir=$HOME/.dotfiles git@github.com:timomeh/dotfiles.git $HOME/dotfiles-tmp
+   ```
+
+2. Copy the working tree from the tmp directory into the home directory.
+   ```sh
+   cp -r ~/dotfiles-tmp/. ~
+   ```
+
+3. Delete the tmp dotfiles directory.
+   ```sh
+   rm -rf ~/dotfiles-tmp/
+   ```
+
+4. Add the dotfiles-git alias to the current shell.  
+   ```sh
+   alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+   ```
+
+5. Don't show untracked files.
+   ```sh
+   dotfiles config --local status.showUntrackedFiles no
+   ```
+
+### Getting started on a new machine
+
+1. Get basics working
+	* sign in to iCloud
+	* basic setup of Mouse & Keyboard
+2. Install Homebrew
+3. Intall git (will be re-installed via the Brewfile in step 6)
+4. Set up SSH key for Github
+5. Clone dotfiles
+6. `brew bundle`
+7. Change Alfred Shortcuts to CMD + Space
+8. Setup Dropbox and 1Password, then sign in to all the apps
+9. You're all set up
 
 ## Vim Plugin Installation
-Plugins are installed via Vundle, so there is little to worry about. However, in
-order for YouCompleteMe to work on a new maschine, it needs to be recomiled.
-Follow the [insallation guidelines in the official
-repository.](https://github.com/Valloric/YouCompleteMe#mac-os-x)
+Plugins are installed via Vundle, so there is little to worry about. However, it
+might happen that Vundle is not working out of the box. Reinstalling will solve
+that issue. Afterwards, just run `:PluginInstall` in vim and you're cooking with
+gas.
