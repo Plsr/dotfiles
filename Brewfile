@@ -26,6 +26,7 @@ cask "font-iosevka-nerd-font"
 cask "postico"
 cask "sketch"
 cask "insomnia"
+cask "hyper"
 
 # Applications installed from the macOS AppStore,
 # using mas
