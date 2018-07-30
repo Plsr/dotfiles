@@ -25,6 +25,7 @@ cask "spotify"
 cask "font-iosevka-nerd-font"
 cask "postico"
 cask "sketch"
+cask "insomnia"
 
 # Applications installed from the macOS AppStore,
 # using mas
