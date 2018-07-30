@@ -205,3 +205,6 @@ set noshowmode
 set backspace=indent,eol,start
 
 :let g:notes_directories = ['~//Dropbox (Personal)/notes']
+
+" Set background to transparent to macht terminal bg
+hi Normal guibg=NONE ctermbg=NONE
