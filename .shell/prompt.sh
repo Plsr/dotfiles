@@ -8,6 +8,9 @@ ssh_info() {
 
 # Echoes information about Git repository status when inside a Git repository
 git_info() {
+  if [[ "$PWD" -ef "$HOME" ]]; then
+    return 1
+  fi
 
   # Git branch/tag, or name-rev if on detached head
   local GIT_LOCATION=${$((git symbolic-ref -q HEAD || git name-rev --name-only --no-undefined --always HEAD) 2> /dev/null)#(refs/heads/|tags/)}
