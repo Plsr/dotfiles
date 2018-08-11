@@ -1,6 +1,8 @@
 # Taps
 tap "homebrew/cask"
 tap "caskroom/fonts"
+tap "crisidev/homebrew-chunkwm"
+tap "koekeishiya/formulae"
 
 # Hombrew Formulae
 brew "mas"
@@ -17,6 +19,8 @@ brew "the_silver_searcher"
 brew "graphviz"
 brew "imagemagick"
 brew "jpegoptim"
+brew "chunkwm"
+brew "skhd"
 
 # Application binaries installed via cask
 cask "firefox"
