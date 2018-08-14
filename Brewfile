@@ -21,6 +21,7 @@ brew "imagemagick"
 brew "jpegoptim"
 brew "chunkwm"
 brew "skhd"
+brew "pyenv"
 
 # Application binaries installed via cask
 cask "firefox"
@@ -36,6 +37,9 @@ cask "sketch"
 cask "insomnia"
 cask "hyper"
 cask "rocket"
+cask "notion"
+cask "imageoptim"
+cask "google-chrome"
 
 # Applications installed from the macOS AppStore,
 # using mas
@@ -48,3 +52,4 @@ mas "Tweetbot 3 for Twitter", id: 1384080005
 mas "Freckle", id: 879917538
 mas "Be Focused - Focus Timer", id: 973134470
 mas "Keynote", id: 409183694
+mas "GIPHY Capture. The GIF Maker", id: 668208984
