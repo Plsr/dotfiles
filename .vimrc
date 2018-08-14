@@ -154,7 +154,7 @@ let mapleader = ","
 nnoremap <Space> :noh<CR>
 
 " Fuzzy Finder ---------------------------------------------------
-nnoremap <C-@> :Buffers<CR>
+nnoremap <C-b> :Buffers<CR>
 nmap <C-p> :Files<CR>
 nmap <Leader>r :Tags<CR>
 nmap <Leader>p :Ack! <space><CR>
