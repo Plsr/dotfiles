@@ -30,6 +30,9 @@ PATH="$HOME/.rbenv/bin:$PATH"
 # Autmoatically load rbenv
 eval "$(rbenv init -)"
 
+# Automatically load pyenv
+eval "$(pyenv init -)"
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
