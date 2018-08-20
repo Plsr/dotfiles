@@ -6,6 +6,8 @@ if has('python3')
   silent! python3 1
 endif
 
+filetype plugin on
+
 " Vundle Setup ----------------------------------------------
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -54,6 +56,7 @@ Plugin 'SirVer/ultisnips'
 " Taking notes
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
+Plugin 'vimwiki/vimwiki'
 
 " Writing prose
 Plugin 'junegunn/goyo.vim'
@@ -195,6 +198,7 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+map <Leader>x :VimwikiToggleListItem<CR>
 
 " Enable React snippets
 let g:UltiSnipsExpandTrigger="<C-l>"
@@ -209,3 +213,10 @@ set backspace=indent,eol,start
 
 " Set background to transparent to macht terminal bg
 hi Normal guibg=NONE ctermbg=NONE
+
+" Vimwiki Config
+let g:vimwiki_url_maxsave=0
+let wiki = {}
+let g:vimwikidir = $HOME . "/Dropbox (Personal)/vimwiki"
+let wiki.path = g:vimwikidir
+let g:vimwiki_list=[wiki]
