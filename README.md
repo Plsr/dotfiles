@@ -41,7 +41,7 @@ It's just a Git Repo. But you can't clone into a directory with existing files, 
 
 1. Clone into a directory with a seperate git directory and a temporary directory as working tree.
    ```sh
-   git clone --separate-git-dir=$HOME/.dotfiles git@github.com:timomeh/dotfiles.git $HOME/dotfiles-tmp
+   git clone --separate-git-dir=$HOME/.dotfiles git@github.com:plsr/dotfiles.git $HOME/dotfiles-tmp
    ```
 
 2. Copy the working tree from the tmp directory into the home directory.
