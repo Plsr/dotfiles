@@ -42,6 +42,7 @@ cask "rocket"
 cask "notion"
 cask "imageoptim"
 cask "google-chrome"
+cask "zeplin"
 
 # Applications installed from the macOS AppStore,
 # using mas
