@@ -27,3 +27,6 @@ alias colorscheme="wal -i $HOME/Pictures/Wallpapers"
 alias rwm="brew services restart chunkwm"
 alias ewm="brew services stop chunkwm"
 alias swm="brew services start chunkwm"
+
+# Brainfart
+alias rials="rails"
