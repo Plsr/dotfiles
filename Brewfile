@@ -22,6 +22,9 @@ brew "jpegoptim"
 brew "chunkwm"
 brew "skhd"
 brew "pyenv"
+brew "ffmpegthumbnailer"
+brew "diff-so-fancy"
+brew "tldr"
 
 # Application binaries installed via cask
 cask "firefox"
@@ -43,6 +46,7 @@ cask "notion"
 cask "imageoptim"
 cask "google-chrome"
 cask "zeplin"
+cask "couleurs"
 
 # Applications installed from the macOS AppStore,
 # using mas
