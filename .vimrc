@@ -61,6 +61,9 @@ Plugin 'vimwiki/vimwiki'
 " Writing prose
 Plugin 'junegunn/goyo.vim'
 
+" Git
+Plugin 'tpope/vim-fugitive'
+
 " fzf (fuzzy finder)
 set rtp+=/usr/local/opt/fzf
 Plugin 'junegunn/fzf.vim'
