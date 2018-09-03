@@ -223,3 +223,4 @@ let wiki = {}
 let g:vimwikidir = $HOME . "/Dropbox (Personal)/vimwiki"
 let wiki.path = g:vimwikidir
 let g:vimwiki_list=[wiki]
+let g:vimwiki_folding='expr'
