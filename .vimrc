@@ -94,7 +94,8 @@ if &term =~# '^screen'
 endif
 
 " set color scheme
-colorscheme nord
+colorscheme onedark
+
 
 " Highlight search results
 set hlsearch
@@ -224,3 +225,5 @@ let g:vimwikidir = $HOME . "/Dropbox (Personal)/vimwiki"
 let wiki.path = g:vimwikidir
 let g:vimwiki_list=[wiki]
 let g:vimwiki_folding='expr'
+
+set termguicolors
