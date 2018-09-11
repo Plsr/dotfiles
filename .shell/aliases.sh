@@ -28,5 +28,8 @@ alias rwm="brew services restart chunkwm"
 alias ewm="brew services stop chunkwm"
 alias swm="brew services start chunkwm"
 
+# Override default tools
+alias cat="bat"
+
 # Brainfart
 alias rials="rails"
