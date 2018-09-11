@@ -25,6 +25,8 @@ brew "pyenv"
 brew "ffmpegthumbnailer"
 brew "diff-so-fancy"
 brew "tldr"
+brew "bat"
+brew "htop"
 
 # Application binaries installed via cask
 cask "firefox"
