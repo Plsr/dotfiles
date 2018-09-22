@@ -49,6 +49,7 @@ cask "imageoptim"
 cask "google-chrome"
 cask "zeplin"
 cask "couleurs"
+cask "dash"
 
 # Applications installed from the macOS AppStore,
 # using mas
