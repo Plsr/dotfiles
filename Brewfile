@@ -42,7 +42,6 @@ cask "font-roboto-mono"
 cask "postico"
 cask "sketch"
 cask "insomnia"
-cask "hyper"
 cask "rocket"
 cask "notion"
 cask "imageoptim"
@@ -50,6 +49,7 @@ cask "google-chrome"
 cask "zeplin"
 cask "couleurs"
 cask "dash"
+cask "virtualbox"
 
 # Applications installed from the macOS AppStore,
 # using mas

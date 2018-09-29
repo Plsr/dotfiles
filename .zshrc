@@ -42,4 +42,8 @@ export NVM_DIR="$HOME/.nvm"
 # Use genymotion ADB
 PATH=$PATH:/Applications/Genymotion.app/Contents/MacOS/Tools
 
+# Enabled zsh_history
+SAVEHIST=100
+HISTFILE=~/.zsh_history
+
 export PATH
