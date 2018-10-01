@@ -94,7 +94,7 @@ if &term =~# '^screen'
 endif
 
 " set color scheme
-colorscheme onedark
+colorscheme wal
 
 
 " Highlight search results
@@ -226,4 +226,3 @@ let wiki.path = g:vimwikidir
 let g:vimwiki_list=[wiki]
 let g:vimwiki_folding='expr'
 
-set termguicolors
