@@ -24,9 +24,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Yggdroot/indentLine'
 
 " Color Scheme
-Plugin 'dylanaraps/wal.vim'
 Plugin 'joshdick/onedark.vim'
-Plugin 'arcticicestudio/nord-vim'
 
 " JS Syntax
 Plugin 'pangloss/vim-javascript'
@@ -94,7 +92,7 @@ if &term =~# '^screen'
 endif
 
 " set color scheme
-colorscheme wal
+colorscheme onedark
 
 
 " Highlight search results
@@ -225,4 +223,6 @@ let g:vimwikidir = $HOME . "/Dropbox (Personal)/vimwiki"
 let wiki.path = g:vimwikidir
 let g:vimwiki_list=[wiki]
 let g:vimwiki_folding='expr'
+
+map <Leader>g :Goyo<CR>
 

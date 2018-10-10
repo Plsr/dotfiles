@@ -33,3 +33,6 @@ alias cat="bat"
 
 # Brainfart
 alias rials="rails"
+
+alias sublime="open -a /Applications/Sublime\ Text.app"
+alias gv="open -a /Applications/MacVim.app"

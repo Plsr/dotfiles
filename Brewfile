@@ -49,7 +49,6 @@ cask "google-chrome"
 cask "zeplin"
 cask "couleurs"
 cask "dash"
-cask "virtualbox"
 
 # Applications installed from the macOS AppStore,
 # using mas

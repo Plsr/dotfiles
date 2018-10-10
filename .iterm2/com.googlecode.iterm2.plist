@@ -751,11 +751,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>940 323 1126 433 0 0 2560 1440 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1410 786 620 392 0 0 3440 1440 </string>
+	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1316 717 1018 447 0 0 3440 1440 </string>
+	<string>321 354 918 452 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>60 69 1640 1301 0 0 3440 1440 </string>
+	<string>0 0 2434 1300 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1302 60 1196 1320 0 0 2560 1440 </string>
 	<key>New Bookmarks</key>
@@ -1488,7 +1488,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>12</integer>
+			<integer>0</integer>
 			<key>Working Directory</key>
 			<string>/Users/chrispop</string>
 		</dict>
@@ -1551,7 +1551,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-10-01T05:44:27Z</date>
+	<date>2018-10-08T15:21:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>TabStyle</key>
@@ -1565,7 +1565,7 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.2.1</string>
+	<string>3.2.3</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
