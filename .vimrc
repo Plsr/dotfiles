@@ -43,6 +43,9 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-rails'
 Plugin 'thoughtbot/vim-rspec'
 
+" Autocompletion
+Plugin 'Valloric/YouCompleteMe'
+
 " Linitng Support
 Plugin 'w0rp/ale'
 
