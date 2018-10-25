@@ -27,6 +27,7 @@ brew "diff-so-fancy"
 brew "tldr"
 brew "bat"
 brew "htop"
+brew "cmake"
 
 # Application binaries installed via cask
 cask "firefox"
@@ -43,11 +44,9 @@ cask "postico"
 cask "sketch"
 cask "insomnia"
 cask "rocket"
-cask "notion"
 cask "imageoptim"
 cask "google-chrome"
 cask "zeplin"
-cask "couleurs"
 cask "dash"
 
 # Applications installed from the macOS AppStore,
