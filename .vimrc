@@ -49,8 +49,8 @@ Plugin 'Valloric/YouCompleteMe'
 " Linitng Support
 Plugin 'w0rp/ale'
 
-" JS/React helpers
-Plugin 'epilande/vim-react-snippets'
+" Snippets
+Plugin 'Plsr/vim-snippets'
 Plugin 'epilande/vim-es2015-snippets'
 Plugin 'SirVer/ultisnips'
 
