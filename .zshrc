@@ -17,10 +17,6 @@ source "${HOME}/.shell/aliases.sh"
 ###########
 source "${HOME}/.shell/prompt.sh"
 
-# Reload last pywal color scheme on startup
-(command cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
-
 ########
 # PATH #
 ########
