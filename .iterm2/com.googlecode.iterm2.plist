@@ -1099,11 +1099,13 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>2662 992 400 129 0 0 3440 1440 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1410 786 620 392 0 0 3440 1440 </string>
+	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>879 790 918 512 0 0 2560 1440 </string>
+	<string>1318 738 918 512 0 0 3440 1440 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>333 856 592 584 0 0 3440 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>469 220 1714 1051 0 0 2560 1440 </string>
+	<string>2317 495 760 637 0 0 3440 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1302 60 1196 1320 0 0 2560 1440 </string>
 	<key>New Bookmarks</key>
@@ -1377,7 +1379,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string>tmux attach -t init || tmux new -s init</string>
+			<string></string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1420,7 +1422,7 @@
 			<key>Cursor Type</key>
 			<integer>2</integer>
 			<key>Custom Command</key>
-			<string>Yes</string>
+			<string>No</string>
 			<key>Custom Directory</key>
 			<string>Recycle</string>
 			<key>Default Bookmark</key>
@@ -1843,6 +1845,8 @@
 			<string>/Users/chrispop</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -1901,7 +1905,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-10-25T12:58:11Z</date>
+	<date>2018-10-31T10:11:50Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>TabStyle</key>
@@ -1912,10 +1916,12 @@
 	<integer>20</integer>
 	<key>TerminalVMargin</key>
 	<integer>20</integer>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1540537216</real>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.2.4</string>
+	<string>3.2.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
