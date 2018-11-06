@@ -20,7 +20,7 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 alias rs="rails server"
 
 # Postgres
-alias postgres="postgres -D /usr/local/var/postgres"
+alias postgres="brew services start postgres"
 
 # Eyecandy
 alias colorscheme="wal -i $HOME/Pictures/Wallpapers"
