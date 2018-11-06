@@ -1,0 +1,86 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.tabSize": 2,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 24,
+    "editor.autoIndent": false,
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "materialTheme.accent": "Teal",
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#80CBC4",
+        "list.activeSelectionForeground": "#80CBC4",
+        "list.inactiveSelectionForeground": "#80CBC4",
+        "list.highlightForeground": "#80CBC4",
+        "scrollbarSlider.activeBackground": "#80CBC450",
+        "editorSuggestWidget.highlightForeground": "#80CBC4",
+        "textLink.foreground": "#80CBC4",
+        "progressBar.background": "#80CBC4",
+        "pickerGroup.foreground": "#80CBC4",
+        "tab.activeBorder": "#80CBC4",
+        "notificationLink.foreground": "#80CBC4",
+        "editorWidget.resizeBorder": "#80CBC4",
+        "editorWidget.border": "#80CBC4",
+        "settings.modifiedItemIndicator": "#80CBC4",
+        "settings.modifiedItemForeground": "#80CBC4",
+        "settings.headerForeground": "#80CBC4",
+        "panelTitle.activeBorder": "#80CBC4",
+        "breadcrumb.activeSelectionForeground": "#80CBC4",
+        "menu.selectionForeground": "#80CBC4",
+        "menubar.selectionForeground": "#80CBC4"
+    },
+    "css.lint.boxModel": "warning",
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.float": "warning",
+    "css.lint.idSelector": "warning",
+    "css.lint.important": "warning",
+    "css.lint.universalSelector": "warning",
+    "css.lint.zeroUnits": "warning",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.colorTheme": "Monokai",
+    "highlight.regexes": {
+        "(// ?TODO:?)(.*)": [
+            {
+            "overviewRulerColor": "#ffcc00",
+            "backgroundColor": "#ffcc00",
+            "color": "#1f1f1f",
+            "fontWeight": "bold"
+            },
+            {
+            "backgroundColor": "#d9ad00",
+            "color": "#1f1f1f"
+            }
+        ],
+        "(// ?FIXME:?)(.*)": [
+            {
+            "overviewRulerColor": "#ff0000",
+            "backgroundColor": "#ff0000",
+            "color": "#1f1f1f",
+            "fontWeight": "bold"
+            },
+            {
+            "backgroundColor": "#d90000",
+            "color": "#1f1f1f"
+            }
+        ],
+        "(// )(@\\w+)": [
+            {},
+            {
+            "color": "#4de0ff"
+            }
+        ]
+    },
+    "todo-tree.defaultHighlight": {
+        "foreground": "green",
+        "type": "none"
+    },
+    "todo-tree.customHighlight": {
+        "TODO": {},
+        "FIXME": {}
+    },
+    "todo-tree.flat": true
+}
