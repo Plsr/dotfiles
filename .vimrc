@@ -229,3 +229,7 @@ let g:vimwiki_folding='expr'
 
 map <Leader>g :Goyo<CR>
 
+" Ultisnips config
+let g:UltiSnipsExpandTrigger="<c-l>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
