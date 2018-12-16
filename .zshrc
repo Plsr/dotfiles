@@ -46,4 +46,6 @@ PATH=$PATH:/Applications/Genymotion.app/Contents/MacOS/Tools
 SAVEHIST=100
 HISTFILE=~/.zsh_history
 
+export TERM=xterm-256color
+
 export PATH
