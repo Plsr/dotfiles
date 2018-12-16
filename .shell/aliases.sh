@@ -1,5 +1,6 @@
-# Movement
+# Movement & File system
 alias ..="cd .."
+alias lsa="ls -al"
 
 # Dotfiles
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
