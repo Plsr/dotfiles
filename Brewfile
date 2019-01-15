@@ -51,6 +51,7 @@ cask "google-chrome"
 cask "zeplin"
 cask "hyper"
 cask "dash"
+cask "alacritty"
 
 # Applications installed from the macOS AppStore,
 # using mas
