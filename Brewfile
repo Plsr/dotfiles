@@ -30,6 +30,7 @@ brew "htop"
 brew "cmake"
 brew "watchman"
 brew "httpie"
+brew "fish"
 
 # Application binaries installed via cask
 cask "firefox"

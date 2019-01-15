@@ -58,6 +58,7 @@ Plugin 'prettier/vim-prettier' " Code formatting
 Plugin 'junegunn/fzf.vim' " fzf fuzzy finder
 Plugin 'mileszs/ack.vim' " Run fzf from vim
 Plugin 'ntpeters/vim-better-whitespace' " Display trailing whitespace
+Plugin 'dag/vim-fish' " Fish support
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
