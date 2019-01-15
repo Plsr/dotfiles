@@ -39,7 +39,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'scrooloose/nerdtree' " Filetree
 Plugin 'Yggdroot/indentLine' " Visually display indentation level of lines
-Plugin 'tomasr/molokai' " Color Scheme
+Plugin 'dracula/vim' " Color Scheme
 Plugin 'pangloss/vim-javascript' " JS syntax support
 Plugin 'mxw/vim-jsx' " JSX syntax support
 Plugin 'itchyny/lightline.vim' " More aesthetic status bar
