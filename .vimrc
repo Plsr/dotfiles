@@ -67,14 +67,11 @@ filetype plugin indent on    " required
 " Syntax Highlighting ----------
 set encoding=utf8
 syntax enable " Permanently enable syntax highlighting
-colorscheme molokai " set color scheme
+colorscheme dracula " set color scheme
 
 " Set background to transparent to macht terminal bg
 hi Normal guibg=NONE ctermbg=NONE
 
-if (has("termguicolors"))
-   set termguicolors
-endif
 
 
 " Editor Settings --------------------------------------------
