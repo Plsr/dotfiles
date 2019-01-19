@@ -30,3 +30,7 @@ alt - r : chunkc tiling::desktop --rotate 90
 # move focused container to workspace
 shift + alt - p : chunkc tiling::window --send-to-desktop prev
 shift + alt - n : chunkc tiling::window --send-to-desktop next
+
+# move focused container to next monitor
+ctrl + shift + alt - p : chunkc tiling::window --send-to-monitor prev
+ctrl + shift + alt - n : chunkc tiling::window --send-to-monitor next
