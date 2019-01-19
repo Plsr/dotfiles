@@ -39,7 +39,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'scrooloose/nerdtree' " Filetree
 Plugin 'Yggdroot/indentLine' " Visually display indentation level of lines
-Plugin 'dracula/vim' " Color Scheme
+Plugin 'morhetz/gruvbox' " Color scheme
 Plugin 'pangloss/vim-javascript' " JS syntax support
 Plugin 'mxw/vim-jsx' " JSX syntax support
 Plugin 'itchyny/lightline.vim' " More aesthetic status bar
@@ -68,7 +68,7 @@ filetype plugin indent on    " required
 " Syntax Highlighting ----------
 set encoding=utf8
 syntax enable " Permanently enable syntax highlighting
-colorscheme dracula " set color scheme
+colorscheme gruvbox " set color scheme
 
 " Set background to transparent to macht terminal bg
 hi Normal guibg=NONE ctermbg=NONE
