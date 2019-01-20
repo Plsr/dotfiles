@@ -1103,11 +1103,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1410 786 620 392 0 0 3440 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>931 956 918 452 0 0 2560 1440 </string>
+	<string>931 922 796 486 0 0 2560 1440 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>333 856 592 584 0 0 3440 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1302 48 1216 1343 0 0 2560 1440 </string>
+	<string>1302 48 1216 1344 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1302 60 1196 1320 0 0 2560 1440 </string>
 	<key>New Bookmarks</key>
@@ -1898,6 +1898,8 @@
 	<string>/Users/chrispop/.iterm2</string>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
