@@ -25,7 +25,7 @@ shift + alt - j : chunkc tiling::window --warp south
 shift + alt - k : chunkc tiling::window --warp north
 shift + alt - l : chunkc tiling::window --warp east
 
-alt - r : chunkc tiling::desktop --rotate 90
+shift + alt - r : chunkc tiling::desktop --rotate 90
 
 # move focused container to workspace
 shift + alt - p : chunkc tiling::window --send-to-desktop prev
