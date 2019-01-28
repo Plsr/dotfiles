@@ -42,6 +42,9 @@ export NVM_DIR="$HOME/.nvm"
 # Use genymotion ADB
 PATH=$PATH:/Applications/Genymotion.app/Contents/MacOS/Tools
 
+# Set postgres path
+export PGDATA='/usr/local/var/postgres'
+
 # Enabled zsh_history
 SAVEHIST=100
 HISTFILE=~/.zsh_history
