@@ -31,6 +31,9 @@ brew "cmake"
 brew "watchman"
 brew "httpie"
 brew "fish"
+brew "neofetch"
+brew "speedtest-cli"
+brew "glances"
 
 # Application binaries installed via cask
 cask "firefox"
