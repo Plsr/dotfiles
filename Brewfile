@@ -34,6 +34,7 @@ brew "fish"
 brew "neofetch"
 brew "speedtest-cli"
 brew "glances"
+brew "exa"
 
 # Application binaries installed via cask
 cask "firefox"
