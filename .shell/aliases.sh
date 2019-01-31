@@ -7,7 +7,7 @@ alias ea="exa -lhma"
 alias eag="exa -lhma --git"
 
 # Dotfiles
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dtf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Git
 alias g="git"
@@ -20,6 +20,8 @@ alias gco="git checkout"
 alias gcob="git checkout -b"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+alias tmux="tmux -u"
 
 # Rails
 alias rs="rails server"
