@@ -59,6 +59,7 @@ Plugin 'junegunn/fzf.vim' " fzf fuzzy finder
 Plugin 'mileszs/ack.vim' " Run fzf from vim
 Plugin 'ntpeters/vim-better-whitespace' " Display trailing whitespace
 Plugin 'dag/vim-fish' " Fish support
+Plugin 'vimwiki/vimwiki' " Wiki
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -68,12 +69,20 @@ filetype plugin indent on    " required
 " Syntax Highlighting ----------
 set encoding=utf8
 syntax enable " Permanently enable syntax highlighting
+set background=dark
+let g:gruvbox_contrast_dark='soft'
 colorscheme gruvbox " set color scheme
 
 " Set background to transparent to macht terminal bg
-hi Normal guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE
 
+set t_Co=256
 
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 
 " Editor Settings --------------------------------------------
 language en_US
@@ -146,12 +155,24 @@ if has("autocmd")
 endif
 
 " ALE Setup ----------
+
+" Defined file types that should be fixed
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'css': ['prettier'],
 \}
 
-let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 1 " Autmatically fix files on save
+
+" Vimwiki ----------
+let g:vimwiki_url_maxsave=0
+let wiki = {}
+let g:vimwikidir = $HOME . "/Dropbox (Personal)/vimwiki"
+let wiki.path = g:vimwikidir
+let wiki.syntax = 'markdown'
+let wiki.ext = '.md'
+let g:vimwiki_list=[wiki]
+let g:vimwiki_folding='expr'
 
 " Unorganised ----------
 set noshowmode
