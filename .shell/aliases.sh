@@ -1,6 +1,7 @@
 # Movement & File system
 alias ..="cd .."
-alias lsa="ls -al"
+alias ls="e"
+alias lsa="ea"
 alias e="exa -lhm"
 alias eg="exa -lhm --git"
 alias ea="exa -lhma"
@@ -40,3 +41,5 @@ alias cat="bat"
 
 # Brainfart
 alias rials="rails"
+
+alias vim="nvim"
