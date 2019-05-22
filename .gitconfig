@@ -3,7 +3,7 @@
 
 [core]
 	excludesfile = ~/.gitignore
-	editor = /usr/local/bin/vim
+	editor = nvim
 
 [alias]
   prune = fetch --prune
