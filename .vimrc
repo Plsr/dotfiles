@@ -38,8 +38,11 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'scrooloose/nerdtree' " Filetree
-Plugin 'Yggdroot/indentLine' " Visually display indentation level of lines
-Plugin 'morhetz/gruvbox' " Color scheme
+Plugin 'mhartington/oceanic-next' "Color Scheme
+Plugin 'morhetz/gruvbox'
+Plugin 'dracula/vim'
+Plugin 'joshdick/onedark.vim'
+Plugin 'crusoexia/vim-monokai'
 Plugin 'pangloss/vim-javascript' " JS syntax support
 Plugin 'mxw/vim-jsx' " JSX syntax support
 Plugin 'itchyny/lightline.vim' " More aesthetic status bar
@@ -69,20 +72,17 @@ filetype plugin indent on    " required
 " Syntax Highlighting ----------
 set encoding=utf8
 syntax enable " Permanently enable syntax highlighting
-set background=dark
-let g:gruvbox_contrast_dark='soft'
-colorscheme gruvbox " set color scheme
+set bg=dark
+colorscheme gruvbox  " set color scheme
+set termguicolors
+let g:dracula_italic = 0
+let g:dracula_bold = 0
+let g:dracula_underline = 0
+let g:dracula_undercurl = 0
+let g:dracula_inverse = 0
 
 " Set background to transparent to macht terminal bg
 "hi Normal guibg=NONE ctermbg=NONE
-
-set t_Co=256
-
-if exists('+termguicolors')
-  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
 
 " Editor Settings --------------------------------------------
 language en_US
@@ -163,6 +163,7 @@ let g:ale_fixers = {
 \}
 
 let g:ale_fix_on_save = 1 " Autmatically fix files on save
+let g:ale_set_highlights = 0 " Disable highlights
 
 " Vimwiki ----------
 let g:vimwiki_url_maxsave=0
@@ -180,3 +181,8 @@ set backspace=indent,eol,start
 set laststatus=2
 set rtp+=/usr/local/opt/fzf " fzf (fuzzy finder)
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+" Automatically closing braces
+inoremap {<CR> {<CR>}<Esc>ko
+inoremap [<CR> [<CR>]<Esc>ko
+inoremap (<CR> (<CR>)<Esc>ko
