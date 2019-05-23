@@ -1,9 +1,6 @@
 " NEOVIM CONFIG
 
 " ---------- General ----------
-
-
-
 set encoding=utf8
 
 " Enable syntax highlighing
@@ -54,6 +51,13 @@ let mapleader = ","
 nnoremap B ^
 nnoremap E $
 
+" Clear search highlighting
+nnoremap \h :noh<CR>
+
+" Keybindings for fuzzy finders
+nnoremap <C-b> :Buffers<CR>
+nmap <C-p> :Files<CR>
+nmap <Leader>r :Tags<CR>
 
 " Open init.vim with <leader>v
 nmap <leader>v :tabedit $HOME/.config/nvim/init.vim<CR>
@@ -69,11 +73,36 @@ endif
 " List plugins below this
 call plug#begin()
 
-Plug 'sjl/badwolf'
+" Gruvbox color scheme
+Plug 'morhetz/gruvbox'
+
+" Basic JS Syntax support
+Plug 'pangloss/vim-javascript' 
+
+" JSX syntax support
+Plug 'mxw/vim-jsx' 
+
+" More aesthetic status bar
+Plug 'itchyny/lightline.vim' 
+
+" fzf fuzzy finder
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim' 
+
+" Run fzf from vim
+Plug 'mileszs/ack.vim' 
 
 " Initialize plugin system
 call plug#end()
 
 
 " ---------- Color Scheme ----------
-colorscheme badwolf
+colorscheme gruvbox
+
+" ---------- fzf & silversearcher ----------
+
+" Use The Silver Searcher for fzf
+let $FZF_DEFAULT_COMMAND = 'ag -g ""' 
+
+" fzf (fuzzy finder)
+set rtp+=/usr/local/opt/fzf 
