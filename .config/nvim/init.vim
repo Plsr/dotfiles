@@ -6,7 +6,7 @@ set encoding=utf8
 " Enable syntax highlighing
 syntax on
 
-" Show line numbers
+" Enable line numbers
 set relativenumber
 
 " Redraw only when necessary
@@ -42,6 +42,9 @@ set hlsearch
 set ignorecase
 set smartcase
 
+" Hide current mode, airline takes care of this
+set noshowmode
+
 " ---------- Key bindings ----------
 
 " Remap leader key to ','
@@ -53,6 +56,7 @@ nnoremap E $
 
 " Clear search highlighting
 nnoremap \h :noh<CR>
+nnoremap \g :Goyo<CR>
 
 " Keybindings for fuzzy finders
 nnoremap <C-b> :Buffers<CR>
@@ -61,6 +65,18 @@ nmap <Leader>r :Tags<CR>
 
 " Open init.vim with <leader>v
 nmap <leader>v :tabedit $HOME/.config/nvim/init.vim<CR>
+
+" Toggle TagBar
+nnoremap \t :TagbarToggle<CR>
+
+" Toggle NERDTree
+nnoremap \f :NERDTreeToggle<CR> 
+
+" Make navigating between splits easier, just use ctrl-l instead of ctrl-w l
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " ---------- Plugins ----------
 " Enable plugins
@@ -73,8 +89,8 @@ endif
 " List plugins below this
 call plug#begin()
 
-" Gruvbox color scheme
-Plug 'morhetz/gruvbox'
+" Color scheme
+Plug 'srcery-colors/srcery-vim'
 
 " Basic JS Syntax support
 Plug 'pangloss/vim-javascript' 
@@ -92,17 +108,84 @@ Plug 'junegunn/fzf.vim'
 " Run fzf from vim
 Plug 'mileszs/ack.vim' 
 
+" Code formatting
+Plug 'w0rp/ale'
+
+" Display tags of a file in a buffe aside
+Plug 'majutsushi/tagbar'
+
+" Writing Prose
+Plug 'junegunn/goyo.vim'
+
+" Autocomplete
+Plug 'lifepillar/vim-mucomplete'
+
+" Vim wiki
+Plug 'vimwiki/vimwiki'
+
+" File Tree
+Plug 'scrooloose/nerdtree'
+
 " Initialize plugin system
 call plug#end()
 
 
 " ---------- Color Scheme ----------
-colorscheme gruvbox
+colorscheme srcery
 
 " ---------- fzf & silversearcher ----------
-
 " Use The Silver Searcher for fzf
 let $FZF_DEFAULT_COMMAND = 'ag -g ""' 
 
 " fzf (fuzzy finder)
 set rtp+=/usr/local/opt/fzf 
+
+" ---------- Code formatting ----------
+" Use prettier for js and css files
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\}
+
+" Autmatically fix files on save
+let g:ale_fix_on_save = 1 
+
+" Disable highlights
+let g:ale_set_highlights = 0 
+
+" -------- Folding ---------
+" Fold by syntax
+set foldmethod=syntax
+
+" On opening a file, open all folds
+set foldlevelstart=99
+
+" Enable folding for JavaScript
+let javaScript_fold=1
+
+" Fold on space
+nnoremap <space> za
+
+" ---------- Autocompletion Settings ----------
+set completeopt+=noselect
+
+" Shut off completion messages
+set shortmess+=c
+
+" ---------- VimWiki ----------
+let g:vimwiki_url_maxsave=0
+let wiki = {}
+let g:vimwikidir = $HOME . "/Dropbox (Personal)/vimwiki"
+let wiki.path = g:vimwikidir
+let wiki.syntax = 'markdown'
+let wiki.ext = '.md'
+let g:vimwiki_list=[wiki]
+let g:vimwiki_folding='expr'
+
+" NERDTree Configuration -------------------------------------
+
+" Automatically close NERDTree if it is the last remaining buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+autocmd VimEnter * wincmd p " Jump to the main window.
+
