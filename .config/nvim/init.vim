@@ -96,7 +96,7 @@ endif
 call plug#begin()
 
 " Color scheme
-Plug 'srcery-colors/srcery-vim'
+Plug 'crusoexia/vim-monokai'
 
 " Basic JS Syntax support
 Plug 'pangloss/vim-javascript' 
@@ -132,12 +132,15 @@ Plug 'vimwiki/vimwiki'
 " File Tree
 Plug 'scrooloose/nerdtree'
 
+" Rails helpers
+Plug 'tpope/vim-rails'
+
 " Initialize plugin system
 call plug#end()
 
 
 " ---------- Color Scheme ----------
-colorscheme srcery
+colorscheme monokai
 
 " ---------- fzf & silversearcher ----------
 " Use The Silver Searcher for fzf
