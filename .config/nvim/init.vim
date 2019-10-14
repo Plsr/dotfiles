@@ -135,6 +135,9 @@ Plug 'scrooloose/nerdtree'
 " Rails helpers
 Plug 'tpope/vim-rails'
 
+" Show marks in gutter
+Plug 'kshenoy/vim-signature'
+
 " Initialize plugin system
 call plug#end()
 
