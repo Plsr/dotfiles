@@ -53,3 +53,5 @@ tags
 #
 .tern-port
 
+
+.config/fish/fish_variables
