@@ -1,36 +1,29 @@
 # enter fullscreen mode for the focused container
-alt - f : chunkc tiling::window --toggle fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen
 
 # change focus between tiling / floating windows
-shift + alt - space : chunkc tiling::window --toggle float
+shift + alt - space : yabai -m window --toggle float
 
 # change layout of desktop
-alt - e : chunkc tiling::desktop --layout bsp
-alt - m : chunkc tiling::desktop --layout monocle
-
-# kill focused window
-shift + alt - q : chunkc tiling::window --close
+alt - e : yabai -m space --layout bsp
+alt - m : yabai -m space --layout float
 
 # change focus
-alt - h : chunkc tiling::window --focus west
-alt - j : chunkc tiling::window --focus south
-alt - k : chunkc tiling::window --focus north
-alt - l : chunkc tiling::window --focus east
-alt - p : chunkc tiling::window --focus prev
-alt - n : chunkc tiling::window --focus next
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+alt - p : yabai -m window --focus prev
+alt - n : yabai -m window --focus next
 
 # move focused window
-shift + alt - h : chunkc tiling::window --warp west
-shift + alt - j : chunkc tiling::window --warp south
-shift + alt - k : chunkc tiling::window --warp north
-shift + alt - l : chunkc tiling::window --warp east
+shift + alt - h : yabai -m window --warp west
+shift + alt - j : yabai -m window --warp south
+shift + alt - k : yabai -m window --warp north
+shift + alt - l : yabai -m window --warp east
 
-shift + alt - r : chunkc tiling::desktop --rotate 90
+shift + alt - r : yabai -m space --rotate 90
 
 # move focused container to workspace
-shift + alt - p : chunkc tiling::window --send-to-desktop prev
-shift + alt - n : chunkc tiling::window --send-to-desktop next
-
-# move focused container to next monitor
-ctrl + shift + alt - p : chunkc tiling::window --send-to-monitor prev
-ctrl + shift + alt - n : chunkc tiling::window --send-to-monitor next
+shift + alt - p : yabai -m window --space prev
+shift + alt - n : yabai -m window --space next

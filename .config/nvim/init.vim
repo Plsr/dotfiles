@@ -96,7 +96,7 @@ endif
 call plug#begin()
 
 " Color scheme
-Plug 'crusoexia/vim-monokai'
+Plug 'dylanaraps/wal.vim'
 
 " Basic JS Syntax support
 Plug 'pangloss/vim-javascript' 
@@ -140,7 +140,7 @@ call plug#end()
 
 
 " ---------- Color Scheme ----------
-colorscheme monokai
+colorscheme wal
 
 " ---------- fzf & silversearcher ----------
 " Use The Silver Searcher for fzf
