@@ -30,6 +30,9 @@ alias rs="rails server"
 # Postgres
 alias postgres="brew services start postgresql"
 
+# Docker
+alias dcud="docker-compose up -d"
+
 # Eyecandy
 alias colorscheme="wal -i $HOME/Pictures/Wallpapers"
 alias rwm="brew services restart chunkwm"

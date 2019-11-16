@@ -96,7 +96,7 @@ endif
 call plug#begin()
 
 " Color scheme
-Plug 'dylanaraps/wal.vim'
+Plug 'challenger-deep-theme/vim'
 
 " Basic JS Syntax support
 Plug 'pangloss/vim-javascript' 
@@ -134,6 +134,8 @@ Plug 'scrooloose/nerdtree'
 
 " Rails helpers
 Plug 'tpope/vim-rails'
+Plug 'thoughtbot/vim-rspec'
+
 
 " Show marks in gutter
 Plug 'kshenoy/vim-signature'
@@ -143,7 +145,12 @@ call plug#end()
 
 
 " ---------- Color Scheme ----------
-colorscheme wal
+colorscheme challenger_deep
+
+hi Normal guibg=NONE ctermbg=NONE
+if has('nvim') || has('termguicolors')
+  set termguicolors
+endif
 
 " ---------- fzf & silversearcher ----------
 " Use The Silver Searcher for fzf

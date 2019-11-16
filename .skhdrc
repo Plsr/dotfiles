@@ -27,3 +27,7 @@ shift + alt - r : yabai -m space --rotate 90
 # move focused container to workspace
 shift + alt - p : yabai -m window --space prev
 shift + alt - n : yabai -m window --space next
+
+# float / unfloat window and center on screen
+alt - t : yabai -m window --toggle float;\
+          yabai -m window --grid 4:4:1:0:2:4
