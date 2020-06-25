@@ -9,6 +9,7 @@
   prune = fetch --prune
   stash-all = stash save --include-untracked
   glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [pager]
   diff = diff-so-fancy | less --tabs=1,5 -RFX
