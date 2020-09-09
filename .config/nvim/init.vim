@@ -17,7 +17,7 @@ set autoindent
 set expandtab
 
 " Enable line numbers
-set rnu
+set number
 
 
 " When using the >> or << commands, shift lines by 2 spaces
@@ -41,8 +41,9 @@ set noshowmode
 
 " ---------- Key bindings ----------
 
-" Remap leader key to ','
-let mapleader = ","
+" Remap leader key to space
+let mapleader = " "
+nnoremap <SPACE> <Nop>
 
 " Easier movement to beginning/end of line
 nnoremap B ^
@@ -72,12 +73,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-
 " ---------- Plugins ----------
 " Enable plugins
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
@@ -90,7 +85,6 @@ endif
 call plug#begin()
 
 " Color scheme
-Plug 'morhetz/gruvbox'
 Plug 'jeffkreeftmeijer/vim-dim'
 
 " Autocomplete
@@ -124,16 +118,9 @@ Plug 'majutsushi/tagbar'
 " Writing Prose
 Plug 'junegunn/goyo.vim'
 
-" Vim wiki
-Plug 'vimwiki/vimwiki'
-
 " File Tree
 Plug 'scrooloose/nerdtree'
-
-" Rails helpers
-Plug 'tpope/vim-rails'
-Plug 'thoughtbot/vim-rspec'
-
+Plug 'ryanoasis/vim-devicons'
 
 " Show marks in gutter
 Plug 'kshenoy/vim-signature'
@@ -141,9 +128,8 @@ Plug 'kshenoy/vim-signature'
 " Initialize plugin system
 call plug#end()
 
-
 " ---------- Color Scheme ----------
-colorscheme gruvbox
+colorscheme dim
 
 " ---------- fzf & silversearcher ----------
 " Use The Silver Searcher for fzf
@@ -155,6 +141,7 @@ set rtp+=/usr/local/opt/fzf
 " ---------- Code formatting ----------
 " Use prettier for js and css files
 let g:ale_fixers = {
+\   'typescript': ['prettier'],
 \   'javascript': ['prettier'],
 \   'css': ['prettier'],
 \}
@@ -176,20 +163,10 @@ set foldlevelstart=99
 let javaScript_fold=1
 
 " Fold on space
-nnoremap <space> za
+nnoremap , za
 
 " Shut off completion messages
 set shortmess+=c
-
-" ---------- VimWiki ----------
-let g:vimwiki_url_maxsave=0
-let wiki = {}
-let g:vimwikidir = $HOME . "/Dropbox (Personal)/vimwiki"
-let wiki.path = g:vimwikidir
-let wiki.syntax = 'markdown'
-let wiki.ext = '.md'
-let g:vimwiki_list=[wiki]
-let g:vimwiki_folding='expr'
 
 " NERDTree Configuration -------------------------------------
 
@@ -263,9 +240,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-" Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
-
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 
@@ -311,24 +285,6 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-
-" Using CocList
-" Show all diagnostics
-nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
-" Manage extensions
-nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
-" Show commands
-nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
-" Find symbol of current document
-nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
-" Search workspace symbols
-nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
-" Do default action for next item.
-nnoremap <silent> <space>j  :<C-u>CocNext<CR>
-" Do default action for previous item.
-nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
-" Resume latest coc list
-nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " Override ptyton filetype plugin causing faulty indentation
 " See https://vi.stackexchange.com/questions/8382/vim-doesnt-use-the-correct-indentation-in-python-files
