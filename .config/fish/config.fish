@@ -10,4 +10,5 @@ set -gx PATH $JAVA_HOME/bin $PATH;
 status --is-interactive; and source (rbenv init -|psub);
 pyenv init - | source
 
-source ~/.cache/wal/colors.fish
+#source ~/.cache/wal/colors.fish
+#command cat ~/.cache/wal/sequences
