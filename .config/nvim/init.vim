@@ -18,7 +18,7 @@ set undofile
 set incsearch
 set scrolloff=8
 set completeopt=menuone,noinsert,noselect
-set colorcolumn=80
+set colorcolumn=120
 set signcolumn=yes
 set cmdheight=2
 
@@ -48,6 +48,15 @@ Plug 'jeffkreeftmeijer/vim-dim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
+Plug 'kdheepak/lazygit.nvim'
+Plug 'preservim/nerdtree'
+Plug 'thoughtbot/vim-rspec'
+Plug 'mbbill/undotree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'ThePrimeagen/harpoon'
 call plug#end()
 
 colorscheme dim
@@ -59,6 +68,31 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
 nnoremap <leader>gc <cmd>lua require('telescope.builtin').git_commits()<cr>
 nnoremap <leader>gbc <cmd>lua require('telescope.builtin').git_bcommits()<cr>
+
+" Harpoon
+map <Leader>mf :lua require("harpoon.mark").add_file()<CR>
+map <Leader>sf :lua require("harpoon.ui").toggle_quick_menu()<CR>
+
+" LazyGit config
+nnoremap <silent> <leader>lg :LazyGit<CR>
+
+" Vim Rspec config
+map <Leader>cs :call RunCurrentSpecFile()<CR>
+map <Leader>ns :call RunNearestSpec()<CR>
+
+" UndoTree config
+nnoremap <leader>ut :UndotreeToggle<CR>
+
+" Airline config
+let g:airline#extensions#tabline#enabled = 1 " enable tab line
+let g:airline#extensions#tabline#fnamemod = ':t' " only show file name
+
+" NERDTree
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>y :NERDTreeFind<CR>
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
 
 lua << EOF
 require('telescope').setup{
