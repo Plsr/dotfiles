@@ -52,8 +52,6 @@ Plug 'kdheepak/lazygit.nvim'
 Plug 'preservim/nerdtree'
 Plug 'thoughtbot/vim-rspec'
 Plug 'mbbill/undotree'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'ThePrimeagen/harpoon'
@@ -82,10 +80,6 @@ map <Leader>ns :call RunNearestSpec()<CR>
 
 " UndoTree config
 nnoremap <leader>ut :UndotreeToggle<CR>
-
-" Airline config
-let g:airline#extensions#tabline#enabled = 1 " enable tab line
-let g:airline#extensions#tabline#fnamemod = ':t' " only show file name
 
 " NERDTree
 nnoremap <leader>t :NERDTreeToggle<CR>
@@ -128,3 +122,9 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
+
+" Remove trailing whitespace on buffer write
+augroup Plsr
+  autocmd!
+  autocmd BufWritePre *\(.md\)\@<! %s/\s\+$//e
+augroup END
