@@ -49,7 +49,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
 Plug 'kdheepak/lazygit.nvim'
-Plug 'preservim/nerdtree'
 Plug 'thoughtbot/vim-rspec'
 Plug 'mbbill/undotree'
 Plug 'nvim-lua/plenary.nvim'
@@ -81,13 +80,6 @@ map <Leader>ns :call RunNearestSpec()<CR>
 " UndoTree config
 nnoremap <leader>ut :UndotreeToggle<CR>
 
-" NERDTree
-nnoremap <leader>t :NERDTreeToggle<CR>
-nnoremap <leader>y :NERDTreeFind<CR>
-" Exit Vim if NERDTree is the only window left.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-    \ quit | endif
-
 lua << EOF
 require('telescope').setup{
   defaults = {
@@ -111,6 +103,7 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <leader>e <Cmd>CocCommand explorer<CR>
 
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 function! s:show_documentation()
