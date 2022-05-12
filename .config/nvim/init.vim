@@ -54,9 +54,14 @@ Plug 'mbbill/undotree'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'ThePrimeagen/harpoon'
+Plug 'vimwiki/vimwiki'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 colorscheme dim
+
+:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
+:set list
 
 " Telescope config
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
@@ -65,6 +70,9 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
 nnoremap <leader>gc <cmd>lua require('telescope.builtin').git_commits()<cr>
 nnoremap <leader>gbc <cmd>lua require('telescope.builtin').git_bcommits()<cr>
+nnoremap <leader>gbc <cmd>lua require('telescope.builtin').git_bcommits()<cr>
+nnoremap <leader>fm <cmd>lua require('telescope.builtin').marks()<cr>
+
 
 " Harpoon
 map <Leader>mf :lua require("harpoon.mark").add_file()<CR>
@@ -88,6 +96,13 @@ require('telescope').setup{
 }
 EOF
 
+" VimWiki config
+nnoremap <leader>t :VimwikiToggleListItem<CR>
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
+autocmd bufreadpre *.md setlocal textwidth=80
+
 " CoC config
 " Use <c-space> to trigger completion.
 if has('nvim')
@@ -103,6 +118,7 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <leader>rn <Plug>(coc-rename)
 nmap <leader>e <Cmd>CocCommand explorer<CR>
 
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -121,3 +137,9 @@ augroup Plsr
   autocmd!
   autocmd BufWritePre *\(.md\)\@<! %s/\s\+$//e
 augroup END
+
+" Folding
+set foldmethod=indent
+let g:markdown_folding = 1
+set foldlevel=99
+nnoremap <leader>c za

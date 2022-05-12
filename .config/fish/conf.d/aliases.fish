@@ -45,8 +45,14 @@ alias vim="nvim"
 
 alias edit="open -a MacVim.app $1"
 
-alias did="vim +'normal Go' +'r!date' ~/did.txt"
+alias did="vim +'normal Go' +'r!date' ~/docs/did.txt"
+alias leftoff="vim ~/docs/leftoff.md"
 
 alias vimconf="vim ~/.config/nvim/init.vim"
 alias fishconf="vim ~/.config/fish/config.fish"
 alias showalias="cat ~/.config/fish/conf.d/aliases.fish"
+
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+alias gj="git-jump"
+alias lg="lazygit"

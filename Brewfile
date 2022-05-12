@@ -25,7 +25,7 @@ brew "hub"
 brew "imagemagick"
 brew "jpegoptim"
 brew "neofetch"
-brew "neovim"
+brew "neovim", args: ["HEAD"]
 brew "nvm"
 brew "postgresql", restart_service: true
 brew "postgresql@10"

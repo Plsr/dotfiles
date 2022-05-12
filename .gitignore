@@ -61,3 +61,5 @@ junit.xml
 
 todo.txt
 *.todo
+*.todo.md
+

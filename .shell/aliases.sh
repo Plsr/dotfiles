@@ -43,3 +43,5 @@ alias cat="bat"
 alias rials="rails"
 
 alias vim="nvim"
+alias vimconf="vim ~/.config/nvim/init.vim"
+alias zshconf="vim ~/.zshrc"
