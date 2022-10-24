@@ -14,7 +14,7 @@ keymap.set('n', '<leader>sv', ':vsplit<CR>')
 keymap.set('n', '<leader>sm', ':MaximizerToggle<CR>')
 
 -- nvim-tree
-keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
+keymap.set('n', '<leader>e', ':NvimTreeFindFileToggle<CR>')
 
 -- telescope
 local builtin = require('telescope.builtin')
@@ -48,3 +48,7 @@ function _G.show_docs()
     end
 end
 keymap.set("n", "K", '<CMD>lua _G.show_docs()<CR>', {silent = true})
+keymap.set("n", "<leader>rn", "<Plug>(coc-rename)", {silent = true})
+
+-- lazygit
+keymap.set('n', '<leader>lg', ':LazyGit<CR>')

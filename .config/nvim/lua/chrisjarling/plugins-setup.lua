@@ -41,6 +41,7 @@ return require('packer').startup(function(use)
     },
   }
   use { 'neoclide/coc.nvim', branch = 'release' }
+  use 'kdheepak/lazygit.nvim'
 
   if packer_bootstrap then
     require('packer').sync()
