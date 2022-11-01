@@ -39,3 +39,5 @@ opt.completeopt = "menu,menuone,noselect"
 vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.updatetime = 300
+
+opt.swapfile = true

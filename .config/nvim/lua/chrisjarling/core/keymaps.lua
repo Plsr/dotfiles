@@ -49,6 +49,7 @@ function _G.show_docs()
 end
 keymap.set("n", "K", '<CMD>lua _G.show_docs()<CR>', {silent = true})
 keymap.set("n", "<leader>rn", "<Plug>(coc-rename)", {silent = true})
+keymap.set("i", "<cr>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]], opts)
 
 -- lazygit
 keymap.set('n', '<leader>lg', ':LazyGit<CR>')

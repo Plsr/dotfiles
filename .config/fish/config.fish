@@ -15,3 +15,5 @@ pyenv init - | source
 
 #source ~/.cache/wal/colors.fish
 #command cat ~/.cache/wal/sequences
+
+fish_add_path /opt/homebrew/bin
