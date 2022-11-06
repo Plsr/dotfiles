@@ -17,3 +17,5 @@ pyenv init - | source
 #command cat ~/.cache/wal/sequences
 
 fish_add_path /opt/homebrew/bin
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish

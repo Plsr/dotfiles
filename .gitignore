@@ -63,3 +63,5 @@ todo.txt
 *.todo
 *.todo.md
 
+# asdf
+.tool-versions
