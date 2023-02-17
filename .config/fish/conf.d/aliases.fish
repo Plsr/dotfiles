@@ -48,7 +48,7 @@ alias edit="open -a MacVim.app $1"
 alias did="vim +'normal Go' +'r!date' ~/docs/did.txt"
 alias leftoff="vim ~/docs/leftoff.md"
 
-alias vimconf="vim ~/.config/nvim/init.vim"
+alias vimconf="cd ~/.config/nvim/lua/chrisjarling && vim plugins-setup.lua"
 alias fishconf="vim ~/.config/fish/config.fish"
 alias showalias="cat ~/.config/fish/conf.d/aliases.fish"
 
