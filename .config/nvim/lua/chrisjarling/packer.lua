@@ -23,6 +23,8 @@ return require('packer').startup(function(use)
 
 	use( 'nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
 	use( 'tpope/vim-fugitive' )
+  use( 'nvim-lua/plenary.nvim' )
+  use ('jose-elias-alvarez/null-ls.nvim')
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v1.x',
