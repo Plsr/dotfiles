@@ -11,3 +11,5 @@ set expandtab
 " netwr
 let g:netrw_banner = 0 " We don't want no banner
 let g:netrw_liststyle = 3 " Use tree style listing
+
+nnoremap <space>ft :Vex<CR>
