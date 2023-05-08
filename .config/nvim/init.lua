@@ -1,3 +1,5 @@
+require('plugins')
+
 -- Configure leader key
 vim.g.mapleader = ' '
 
@@ -15,3 +17,5 @@ vim.g.netwr_liststyle = 3 -- Use tree style listing
 
 -- Remaps
 vim.api.nvim_set_keymap('n', '<Leader>ft', ':Vex<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>sc', ':source ~/.config/nvim/init.lua<CR>', { noremap = true })
+
