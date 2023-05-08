@@ -1,5 +1,4 @@
 # Created by https://www.gitignore.io/api/macos
-
 ### macOS ###
 *.DS_Store
 .AppleDouble
@@ -65,3 +64,5 @@ todo.txt
 
 # asdf
 .tool-versions
+
+.config/nvim/plugin/packer_compiled.lua
