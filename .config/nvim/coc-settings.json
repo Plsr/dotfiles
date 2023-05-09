@@ -1,4 +1,6 @@
 {
   "Lua.diagnostics.globals": ["vim"],
-  "suggest.noselect": true
+  "suggest.noselect": true,
+  "eslint.autoFixOnSave": true
+
 }
