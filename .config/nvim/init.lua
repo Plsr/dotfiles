@@ -17,7 +17,7 @@ vim.g.netrw_liststyle = 3 -- Use tree style listing
 
 -- Remaps
 vim.api.nvim_set_keymap('n', '<Leader>ft', ':Vex<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<Leader>sc', ':source ~/.config/nvim/init.lua<CR>', { noremap = true })
 
-vim.cmd [[ colorscheme zenbones ]]
 vim.o.termguicolors = true
+vim.cmd('colorscheme nord')
+

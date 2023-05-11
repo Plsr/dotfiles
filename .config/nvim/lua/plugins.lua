@@ -8,12 +8,11 @@ vim.cmd([[
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use { 'neoclide/coc.nvim', branch = 'release'}
+  use 'shaunsingh/nord.nvim'
+  use('nvim-treesitter/nvim-treesitter', {_run = ':TSUpdate' })
   use {
-    "mcchrish/zenbones.nvim",
-    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
-    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
-    -- In Vim, compat mode is turned on as Lush only works in Neovim.
-    requires = "rktjmp/lush.nvim"
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    requires = { {'nvim-lua/plenary.nvim'} }
   }
 end)
 
