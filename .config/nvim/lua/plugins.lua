@@ -8,11 +8,12 @@ vim.cmd([[
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use { 'neoclide/coc.nvim', branch = 'release'}
-  use 'shaunsingh/nord.nvim'
+  use "savq/melange-nvim"
   use('nvim-treesitter/nvim-treesitter', {_run = ':TSUpdate' })
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use 'github/copilot.vim'
 end)
 
