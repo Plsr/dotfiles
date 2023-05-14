@@ -1,4 +1,4 @@
--- Some servers have issues with backup files
+-- Some servers have issues with backup filescoc
 vim.opt.backup = false
 vim.opt.writebackup = false
 
@@ -43,3 +43,6 @@ keyset("n", "K", '<CMD>lua _G.show_docs()<CR>', {silent = true})
 -- Symbol renaming
 keyset("n", "<leader>rn", "<Plug>(coc-rename)", {silent = true})
 
+-- Code actions
+keyset("x", "<leader>a", "<Plug>(coc-codeaction-selected)", {silent = true})
+keyset("n", "<leader>a", "<Plug>(coc-codeaction-selected)", {silent = true})
