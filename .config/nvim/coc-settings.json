@@ -1,6 +1,7 @@
 {
   "Lua.diagnostics.globals": ["vim"],
   "suggest.noselect": true,
-  "eslint.autoFixOnSave": true
-
+  "eslint.autoFixOnSave": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false
 }
