@@ -3,5 +3,6 @@
   "suggest.noselect": true,
   "eslint.autoFixOnSave": true,
   "diagnostic.virtualText": true,
-  "diagnostic.virtualTextCurrentLineOnly": false
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "coc.preferences.formatOnSave": true
 }
