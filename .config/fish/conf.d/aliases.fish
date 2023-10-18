@@ -7,6 +7,9 @@ alias eg="exa -lhm --git"
 alias ea="exa -lhma"
 alias eag="exa -lhma --git"
 
+# tmux
+alias ta="tmux attach -t"
+
 # Dotfiles
 alias dtf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
@@ -19,6 +22,15 @@ alias gp="git push"
 alias gb="git branch"
 alias gco="git checkout"
 alias gcob="git checkout -b"
+alias uncomm="git reset HEAD^"
+
+function gsc
+  git lg | fzf --ansi | awk '{print $2}' | xargs git show 
+end
+
+function gbc
+  git lg | fzf --ansi | awk '{print $2}' | xargs git show --pretty="" --name-only | cat | xargs nvim -p
+end
 
 alias tmux="tmux -u"
 
@@ -49,10 +61,12 @@ alias did="vim +'normal Go' +'r!date' ~/docs/did.txt"
 alias leftoff="vim ~/docs/leftoff.md"
 
 alias vimconf="cd ~/.config/nvim && vim ."
-alias fishconf="vim ~/.config/fish/config.fish"
+alias fishconf="cd ~/.config/fish && vim config.fish"
 alias showalias="cat ~/.config/fish/conf.d/aliases.fish"
 
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 alias gj="git-jump"
 alias lg="lazygit"
+
+alias sfconf="source ~/.config/fish/config.fish"
