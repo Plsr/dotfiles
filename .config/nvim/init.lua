@@ -29,13 +29,14 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "80"
 
--- netwr config
--- vim.g.netrw_banner = 0
--- vim.g.netrw_liststyle = 3 -- Use tree style listing
+-- Folding
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.opt.foldenable = false
 
 -- Remaps
-vim.api.nvim_set_keymap('n', '<Leader>ft', ':NvimTreeToggle<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>ft', ':NvimTreeFindFileToggle<CR>', { noremap = true })
 
 vim.o.termguicolors = true
-vim.cmd('colorscheme melange')
-
+vim.cmd('colorscheme rose-pine')
+vim.opt.shell = '/opt/homebrew/bin/fish'
