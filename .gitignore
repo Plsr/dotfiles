@@ -66,3 +66,4 @@ todo.txt
 .tool-versions
 
 .config/nvim/plugin/packer_compiled.lua
+
