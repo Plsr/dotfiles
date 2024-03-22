@@ -20,5 +20,9 @@ fish_add_path /opt/homebrew/bin
 
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
+# Setup direnv
+direnv hook fish | source
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/christianpoplawski/google-cloud-sdk/path.fish.inc' ]; . '/Users/christianpoplawski/google-cloud-sdk/path.fish.inc'; end
+  
