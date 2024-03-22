@@ -26,4 +26,13 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+  use 'hashivim/vim-terraform'
+  use 'ellisonleao/gruvbox.nvim'
+  use 'sainnhe/everforest'
+  use "folke/tokyonight.nvim"
+  use "jxnblk/vim-mdx-js"
+  use "jeffkreeftmeijer/vim-dim"
+  use 'tjdevries/colorbuddy.vim'
+  use "tjdevries/gruvbuddy.nvim"
+  use "morhetz/gruvbox"
 end)
