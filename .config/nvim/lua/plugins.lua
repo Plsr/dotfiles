@@ -13,7 +13,6 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
-  use 'github/copilot.vim'
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'tpope/vim-fugitive'
