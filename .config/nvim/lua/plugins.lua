@@ -10,7 +10,7 @@ return require('packer').startup(function(use)
   use { 'neoclide/coc.nvim', branch = 'release' }
   use('nvim-treesitter/nvim-treesitter', { _run = ':TSUpdate' })
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
   use 'github/copilot.vim'
