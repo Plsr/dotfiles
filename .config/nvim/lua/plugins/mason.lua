@@ -11,6 +11,9 @@ return {
     -- nothing in here, but order of setup calls matters, so leaving
     -- it here because I know I'll forget
     mason.setup({
+      ensure_installed = {
+        "prettier",
+      }
     })
 
     mason_lspconfig.setup({
@@ -18,8 +21,9 @@ return {
         "ts_ls",
         "html",
         "cssls",
-        "tailwindcss-language-server",
+        "tailwindcss",
         "lua_ls",
+        "eslint",
       },
       automatic_installation = true,
     })
