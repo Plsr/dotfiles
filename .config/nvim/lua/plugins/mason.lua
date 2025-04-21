@@ -18,8 +18,8 @@ return {
         "ts_ls",
         "html",
         "cssls",
-        "tailwindcss",
-        "lua_ls"
+        "tailwindcss-language-server",
+        "lua_ls",
       },
       automatic_installation = true,
     })
