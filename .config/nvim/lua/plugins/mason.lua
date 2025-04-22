@@ -20,7 +20,6 @@ return {
         "cssls",
         "tailwindcss",
         "lua_ls",
-        "prettier",
       },
       automatic_installation = true,
     })
