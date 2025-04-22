@@ -10,8 +10,8 @@ return {
     return {
       sources = {
         null_ls.builtins.formatting.prettierd,
-        require("none-ls.diagnostics.eslint_d"),
-        require("none-ls.formatting.eslint_d"),
+        require("none-ls.diagnostics.eslint"),
+        require("none-ls.formatting.eslint"),
       },
       on_attach = function(client, bufnr)
         if client.supports_method("textDocument/formatting") then
