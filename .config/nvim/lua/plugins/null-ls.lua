@@ -1,12 +1,17 @@
 return {
   "nvimtools/none-ls.nvim",
+  dependencies = {
+    "nvimtools/none-ls-extras.nvim",
+  },
   event = "VeryLazy",
   opts = function()
     local null_ls = require("null-ls")
     local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
     return {
       sources = {
-        null_ls.builtins.formatting.prettierd
+        null_ls.builtins.formatting.prettierd,
+        require("none-ls.diagnostics.eslint_d"),
+        require("none-ls.formatting.eslint_d"),
       },
       on_attach = function(client, bufnr)
         if client.supports_method("textDocument/formatting") then
