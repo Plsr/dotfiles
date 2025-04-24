@@ -38,4 +38,4 @@ vim.opt.foldenable = false
 vim.api.nvim_set_keymap('n', '<Leader>ft', ':NvimTreeFindFileToggle<CR>', { noremap = true })
 
 vim.opt.shell = '/opt/homebrew/bin/fish'
-vim.cmd [[colorscheme gruvbox]]
+vim.cmd [[colorscheme vague]]
