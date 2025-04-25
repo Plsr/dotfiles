@@ -16,7 +16,10 @@ return require('packer').startup(function(use)
   use 'github/copilot.vim'
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
-  use 'NeogitOrg/neogit'
+  use {
+    'NeogitOrg/neogit',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
   use 'David-Kunz/jester'
   use "lewis6991/gitsigns.nvim"
   use {
