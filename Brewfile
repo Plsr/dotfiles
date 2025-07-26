@@ -1,0 +1,23 @@
+tap "sst/tap"
+
+brew "fish"
+brew "git"
+brew "mise"
+brew "tailscale"
+brew "gh"
+brew "fisher"
+brew "ollama"
+brew "sst/tap/opencode"
+brew "stow"
+
+
+cask "ghostty"
+cask "visual-studio-code"
+cask "notion"
+cask "linear-linear"
+cask "gcloud-cli"
+cask "yaak"
+cask "obsidian"
+cask "discord"
+cask "zoom"
+cask "cleanshot"
