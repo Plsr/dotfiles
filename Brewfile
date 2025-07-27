@@ -9,6 +9,8 @@ brew "fisher"
 brew "ollama"
 brew "sst/tap/opencode"
 brew "stow"
+brew "neovim"
+brew "tmux"
 
 
 cask "ghostty"
