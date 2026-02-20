@@ -1,0 +1,60 @@
+{
+  "plugins": {
+    "coc.nvim": {
+      "rev": "db42f7a30a9cd71d9361b9909276bcf9022a6fff",
+      "src": "https://github.com/neoclide/coc.nvim"
+    },
+    "dracula.nvim": {
+      "rev": "041d923368d540a1e438989ce8f915628081a56a",
+      "src": "https://github.com/Mofiqul/dracula.nvim"
+    },
+    "gruvbox.nvim": {
+      "rev": "5e0a460d8e0f7f669c158dedd5f9ae2bcac31437",
+      "src": "https://github.com/ellisonleao/gruvbox.nvim"
+    },
+    "melange-nvim": {
+      "rev": "ce42f6b629beeaa00591ba73a77d3eeac4cf28ce",
+      "src": "https://github.com/savq/melange-nvim"
+    },
+    "nvim": {
+      "rev": "beaf41a30c26fd7d6c386d383155cbd65dd554cd",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "nvim-tree.lua": {
+      "rev": "b8b44b6a2494d086a9177251a119f9daec6cace8",
+      "src": "https://github.com/nvim-tree/nvim-tree.lua"
+    },
+    "nvim-treesitter": {
+      "rev": "6e42d823ce0a5a76180c473c119c7677738a09d1",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "plenary.nvim": {
+      "rev": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "seoul256.vim": {
+      "rev": "d9a91d8d4e153274e1ecc0ceb05c37f0d0de84d7",
+      "src": "https://github.com/junegunn/seoul256.vim"
+    },
+    "telescope-coc.nvim": {
+      "rev": "42791345bc45c2b635a410dfa2e90acca26e6a02",
+      "src": "https://github.com/fannheyward/telescope-coc.nvim"
+    },
+    "telescope.nvim": {
+      "rev": "b4da76be54691e854d3e0e02c36b0245f945c2c7",
+      "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "vague.nvim": {
+      "rev": "e3d316dc1b84bc759b4cf31619595a9ed7b3ee19",
+      "src": "https://github.com/vague2k/vague.nvim"
+    },
+    "vesper.nvim": {
+      "rev": "1717b1ad657c94bec3fc2bdebb0c55452d9fe46d",
+      "src": "https://github.com/datsfilipe/vesper.nvim"
+    },
+    "yazi.nvim": {
+      "rev": "233466e7bc8345acf15a7ec7ae4b110207790a34",
+      "src": "https://github.com/mikavilpas/yazi.nvim"
+    }
+  }
+}

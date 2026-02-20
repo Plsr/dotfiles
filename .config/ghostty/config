@@ -1,1 +1,16 @@
-font-size=16
+font-size=18 
+font-family = MonoLisa Nerd Font Mono
+adjust-cell-height=15
+
+
+keybind = shift+enter=text:\x1b\r
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+
+theme = Catppuccin Mocha
+title = ghostty
+macos-titlebar-proxy-icon = hidden
+shell-integration = fish
+quit-after-last-window-closed = true
